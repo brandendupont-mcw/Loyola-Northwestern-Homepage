@@ -18,7 +18,6 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
-
       </div>
 
     </>

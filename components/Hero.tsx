@@ -29,7 +29,7 @@ function Hero(){
                     </div>
                     <div className=" lg:order-first">
                       <div className="">
-                      <iframe title="" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/2/" scrolling="no" frameBorder="0"  width="600" height="477" ></iframe>
+                      <iframe title="unique" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/2/" scrolling="no" frameBorder="0"  width="600" height="477" ></iframe>
                       </div>
                     </div>
                   </div>

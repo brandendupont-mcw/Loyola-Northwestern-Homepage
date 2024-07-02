@@ -17,15 +17,11 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'jsx-a11y/anchor-is-valid': [
-      'off',
-      {
-        components: ['Link'],
-        specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton'],
-      },
-    ],
+    'no-unused-vars': 'off',
+    'no-undef': 'off',
+    'react/react-in-jsx-scope': 'off',  
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/anchor-has-content": "off",
     'react/prop-types': 0,
     '@typescript-eslint/no-unused-vars': 0,
     'react/no-unescaped-entities': 0,

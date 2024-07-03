@@ -14,7 +14,7 @@ function Hero4(){
                         <span className="md:block">in the United States</span>
                       </p>
                       <p className="max-w-2xl mt-4 text-base text-black">
-                      <span className="text-sm pr-1 pl-1 mr-1 text-black bg-white border-black border-2 rounded">Prosecutors </span>   across Colorado have commited to use data to take proactive, engaged responses to community problems that de-emphasize the use of incarceration, reduce racial and ethnic disparities in justice outcomes, build greater trust through community engagement, and increase prosecutorial transparency and accountability.
+                      <span className="text-sm pr-1 pl-1 mr-1 text-black bg-white border-black border-2 rounded">Prosecutors </span>   across                <span className="text-sm pr-1 pl-1 mr-1 text-black bg-white border-black border-2 rounded">Colorado </span> have commited to use <span className="text-sm pr-1 pl-1 mr-1 text-black bg-white border-black border-2 rounded">data </span> to take proactive, engaged responses to community problems that de-emphasize the use of incarceration, reduce racial and ethnic disparities in justice outcomes, build greater trust through community engagement, and increase prosecutorial transparency and accountability.
 
                       </p>
                     </div>

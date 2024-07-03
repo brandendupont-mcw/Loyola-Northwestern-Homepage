@@ -50,12 +50,15 @@ function DashboardList(){
 
     return(
         <div className="bg-orange-400 pt-20 py-32 ">
-        <div className=' pr-5 pl-5  mx-auto max-w-3xl'>
-        <div className='text-black font-semibold text-3xl max-w-sm mb-4 leading-tight mb-6 bg-orange-400 pb-4 pt-4'>
-       Explore Colorado Prosecutorial Dashboards
+        <div className=' pr-5 pl-5  mx-auto max-w-4xl'>
+        <div className='text-black font-semibold text-3xl max-w-sm mb-4 leading-tight mb-6 bg-orange-400  pt-4'>
+        <div className="p-1 text-black "> Explore Colorado Prosecutorial Dashboards </div>
     
     </div>
-        <ul className="text-xs ml-2">
+    <p className="mt-2 text-black font-md mb-10 ml-1">
+    Data dashboards include information in eight areas: felony cases filed and declined; charging and filing; case resolution; diversion and deferrals; sentencing; defendant characteristics; victim characteristics and processes; staffing and caseloads.
+    </p>
+        <ul className="text-xs ml-1">
         <div className="grid grid-cols-3 gap-10 text-xs   ">
             {
                linkList.map((d) => (

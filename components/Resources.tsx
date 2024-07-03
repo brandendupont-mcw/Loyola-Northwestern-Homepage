@@ -4,10 +4,10 @@ function Resources(){
 
     return(
 
-        <section className="overflow-y-auto bg-primary-100 lg:h-svh text-white">
+        <section className=" bg-primary-100 lg:h-svh text-white">
         <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl lg:flex">
           <div className="lg:w-1/2">
-            <div className="top-0 pt-8 pb-16 lg:sticky">
+            <div className="top-0 pt-8 pb-16 y">
               <div>
                 <div className="lg:pr-24 md:pr-12">
                   <div>

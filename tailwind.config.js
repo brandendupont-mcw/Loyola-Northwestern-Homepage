@@ -33,10 +33,12 @@ module.exports = {
           400:'#8045FF',
           500:'#8045FF',
           600:'#8045FF',
+          
         },
         gray: colors.gray,
         black: "#17191A",
         yellow:"#F8BA05",
+        green: "#ia9562",
         orange: {
           400:"#FF7C57",
           500:"#FF5B2D"

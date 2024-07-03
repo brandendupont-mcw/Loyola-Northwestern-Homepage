@@ -18,7 +18,7 @@ function DashboardList(){
         link:'https://data.dacolorado.org/1st/'},
         {title:'Denver District Attorney Data Dashboard',
         link:'https://data.dacolorado.org/2nd/'},
-        {title:'5tt Judicial District Attorney Data Dashboard',
+        {title:'5th Judicial District Attorney Data Dashboard',
         link:'https://data.dacolorado.org/5th'},
         {title:'6th Judicial District Attorney Data Dashboard',
         link:'https://data.dacolorado.org/6th'},
@@ -49,7 +49,7 @@ function DashboardList(){
     
 
     return(
-        <div className="bg-orange-400 pt-10 pb-10 ">
+        <div className="bg-orange-400 pt-20 py-32 ">
         <div className=' pr-5 pl-5  mx-auto max-w-3xl'>
         <div className='text-black font-semibold text-3xl max-w-sm mb-4 leading-tight mb-6 bg-orange-400 pb-4 pt-4'>
        Explore Colorado Prosecutorial Dashboards

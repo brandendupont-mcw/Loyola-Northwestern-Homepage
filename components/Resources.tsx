@@ -25,7 +25,7 @@ function Resources(){
           <div className="lg:w-1/2">
             <div className="flex-shrink-0">
               <div>
-                <ul className="grid grid-cols-1 gap-6 mt-6 text-base font-medium text-black list-none lg:mt-0 text-balance" role="list">
+                <ul className="grid grid-cols-1 gap-6 mt-6 text-base font-medium text-black list-none lg:mt-0 text-balance" >
                   <li>
                     <div>
   

@@ -72,6 +72,7 @@ export default function CarouselSize() {
                 <CardContent className="flex  items-center justify-center p-[1px] ">
                 <div className="">
       <img
+      alt="a report"
       className=""
     src={e.src_link} />
     </div>

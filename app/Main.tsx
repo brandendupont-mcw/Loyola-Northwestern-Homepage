@@ -10,6 +10,8 @@ import { formatDate } from 'pliny/utils/formatDate'
 import NewsletterForm from 'pliny/ui/NewsletterForm'
 import CarouselSpacing from "@/components/Carosel"
 import Resources from '@/components/Resources'
+import LogoGrid from '@/components/LogoGrid'
+import Footer2 from '@/components/Footer2'
 
 const MAX_DISPLAY = 5
 
@@ -27,6 +29,8 @@ export default function Home({ posts }) {
     </div>
     </div>
     <Resources />
+    <LogoGrid />
+    <Footer2 />
     </>
   )
 }

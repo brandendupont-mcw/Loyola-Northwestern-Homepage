@@ -28,7 +28,7 @@ function Hero4(){
                 <div className="px-8 mx-auto md:px-12 lg:px-32 max-w-7xl ">
                   <div className="text-center">
                     <p className="mt-10 text-2xl text-black text-balance">
-                        15 Colorado Judicial Districts Have Committed to Data and Innovation in Prosecution.
+                        18 Colorado Judicial Districts Have Committed to Data and Innovation in Prosecution.
                     </p>
                     <div className="relative h-full p-2 mt-2 flex place-content-center">
                     <iframe title="unique" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/2/" scrolling="no" frameBorder="0"  width="600" height="477" ></iframe>

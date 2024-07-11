@@ -1,9 +1,9 @@
 
 function DashboardListItem( { title, link }) {
     return (
-      <div className="text-sm pt-2 pb-2 pl-2 font-semibold text-primary-500 border-black border-b hover:bg-lblue  ">
+      <div className="text-sm pt-2 pb-2 pl-2 font-semibold text-primary-500 border-black border-b   ">
       <div className="flex flex-col ">
-                  <a className='cursor-hover' href={link}><div className="text-md mb-1 font-semibold  text-primary-500"> {title} →</div> </a>
+                  <a className='cursor-hover hover:text-lblue' href={link}><div className="text-md mb-1 font-semibold  text-primary-500"> {title} →</div> </a>
       
                   
             </div>

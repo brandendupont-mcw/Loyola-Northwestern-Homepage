@@ -11,7 +11,7 @@ function Timeline(){
 <ol className=" mx-auto max-w-2xl relative border-s border-ywhite dark:border-gray-700 mt-16 mb-16 ">                  
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
-        <time className="mb-1 text-sm font-normal text-ywhite leading-none text-lblue  dark:text-gray-500">July, 2024</time>
+        <time className="mb-1 text-sm font-normal  leading-none text-lblue  dark:text-gray-500">July, 2024</time>
         <h3 className="text-lg font-semibold text-ywhite dark:text-white">4 Dashboards Released</h3>
         <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The 9th, 11th, 19th, and 22nd Judicial District publicly release their data dashboards.</p>
       

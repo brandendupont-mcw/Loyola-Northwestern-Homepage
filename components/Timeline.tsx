@@ -38,7 +38,7 @@ function Timeline(){
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
-        <time className="mb-1 text-sm font-normal text-ywhite leading-none text-lblue  dark:text-gray-500">July, 2024</time>
+        <time className="mb-1 text-sm font-normal  leading-none text-lblue  dark:text-gray-500">July, 2023</time>
         <h3 className="text-lg font-semibold text-ywhite dark:text-white">3 Dashboards Released; 2 Years In</h3>
         <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The 12th, 17th, and 21st Judicial Districts publicly release their data dashboards. Read more about the work of the <a className="text-lblue hover:underline" href="https://alamosanews.com/article/da-kelly-promised-transparency-less-than-a-year-later-shes-delivering">12th</a>, <a className="text-lblue hover:underline" href="https://www.dailycamera.com/2023/07/21/17th-judicial-district-joins-data-dashboard-program/"> 17th</a>, and <a className="text-lblue hover:underline" href="https://www.gjsentinel.com/news/western_colorado/analyzing-statistics-das-office-joins-statewide-data-publishing-program/article_f3ab3198-27e8-11ee-a207-53119dab0080.html">21st.</a> The work of the first two years wraps up. Read more about the project’s influence along with lessons learned in the <a className="text-lblue hover:underline" href="https://www.the-evaluation-center.org/wp-content/uploads/2023/11/Colorado-Prosecutorial-Dashboards_Project-Survey-Results_2023.pdf">findings report.</a> </p>
       

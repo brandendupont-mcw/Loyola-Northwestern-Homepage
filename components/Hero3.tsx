@@ -37,7 +37,7 @@ function Hero3(){
                               </span>
                         </div>
                         <div>
-                          <h3 className="font-medium text-primary-500">18</h3>
+                          <h3 className="font-medium text-primary-500">15</h3>
                           <p className="mt-2 text-sm text-black">
                           Released External Dashboards
                           </p>

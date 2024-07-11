@@ -65,7 +65,7 @@ function Timeline(){
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-white rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
-        <time className="mb-1 text-sm font-normal text-ywhite leading-none text-lblue  dark:text-gray-500">May, 2022</time>
+        <time className="mb-1 text-sm font-normal  leading-none text-lblue  dark:text-gray-500">May, 2022</time>
         <h3 className="text-lg font-semibold text-ywhite dark:text-white">Community Listening Session</h3>
         <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The 1st, 2nd, 18th, and 20th Judicial Districts host a Denver metro area community listening session to understand the public’s thoughts and concerns around the role of prosecutors in Colorado. Read more<a className="text-lblue hover:underline" href="https://coloradolab.org/wp-content/uploads/2024/06/Prosecutorial-Dashboards-Newsletter-Issue-3-2022-05.pdf"> here.</a> </p>
       

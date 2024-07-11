@@ -31,16 +31,19 @@ module.exports = {
           200:'#D9C7FF',
           300:'#B38FFF',
           400:'#8045FF',
-          500:'#3804c1',
+          500:'#40128B',
           600:'#8045FF',
           
         },
         gray: colors.gray,
-        black: "#17191A",
-        yellow:"#F8BA05",
+        black: "#23103D",
+        yellow:"#FFE79B",
+        lblue:"#4CC9F0",
+        ywhite: "#FFFBF1",
+        ywhite2: "#FFFBF1",
         orange: {
           400:"#FF7C57",
-          500:"#FF5B2D"
+          500:"#F0734C"
 
       }
       },

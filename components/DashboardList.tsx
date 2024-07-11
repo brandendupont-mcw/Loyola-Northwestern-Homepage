@@ -1,9 +1,9 @@
 
 function DashboardListItem( { title, link }) {
     return (
-      <div className="text-sm pt-2 pb-2 pl-2 font-semibold text-black  border-black border-b hover:bg-white  ">
+      <div className="text-sm pt-2 pb-2 pl-2 font-semibold text-primary-500 border-black border-b hover:bg-lblue  ">
       <div className="flex flex-col ">
-                  <a className='cursor-hover' href={link}><div className="text-md mb-1 font-semibold  text-black"> {title} →</div> </a>
+                  <a className='cursor-hover' href={link}><div className="text-md mb-1 font-semibold  text-primary-500"> {title} →</div> </a>
       
                   
             </div>
@@ -49,17 +49,22 @@ function DashboardList(){
     
 
     return(
-        <div className="bg-orange-400 pt-20 py-32 ">
-        <div className=' pr-5 pl-5  mx-auto max-w-4xl'>
-        <div className='text-black font-semibold text-3xl max-w-sm mb-4 leading-tight mb-6 bg-orange-400  pt-4'>
-        <div className="p-1 text-black "> Explore Colorado Prosecutorial Dashboards </div>
+        
+        <>
+
+            
+        <div className="bg-ywhite pt-20 py-32  ">
+            
+        <div className=' pr-5 pl-5  mx-auto max-w-4xl  '>
+        <div className='text-primary-500 font-bold text-5xl max-w-2xl mb-4 leading-tight mb-6 bg-lwhite  pt-4'>
+        <div className="p-1 text-primary-500 "> Explore Colorado Prosecutorial Dashboards </div>
     
     </div>
-    <p className="mt-2 text-black font-md  ml-1 ">
+    <p className="mt-2 text-primary-500 font-md  ml-1 ">
     Data dashboards include information in eight areas: felony cases filed and declined; charging and filing; case resolution; diversion and deferrals; sentencing; defendant characteristics; victim characteristics and processes; staffing and caseloads.
     </p>
 
-        <ul className="text-xs ml-1 border-t-2 mt-4 border-black">
+        <ul className="text-xs ml-1 border-t-2 mt-4 border-primary-500">
         <div className="grid grid-cols-3 gap-10 text-xs pt-4  k ">
             {
                linkList.map((d) => (
@@ -84,6 +89,7 @@ function DashboardList(){
     
         </div>
         </div>
+        </>
     )
 }
 

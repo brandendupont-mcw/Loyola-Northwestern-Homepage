@@ -55,8 +55,8 @@ export default function CarouselSize() {
     }
   ]
   return (
-    <div className=" bg-accent-lightest">
-    <div className="mx-auto grid sm:justify-center justify-items-center bg-accent-lightest pr-20 pl-20">
+    <div className=" ">
+    <div className="mx-auto grid sm:justify-center justify-items-center pr-20 pl-20">
     <Carousel
       opts={{
         align: "start",
@@ -78,8 +78,8 @@ export default function CarouselSize() {
     </div>
                 </CardContent>
               </Card>
-              <a href={e.report_link} className="flex flex-row gap-2 mt-2 hover:underline pl-2 hover:text-primary-500">View Report 
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+              <a href={e.report_link} className="flex flex-row gap-2 mt-2 text-ywhite hover:underline pl-2 hover:text-lblue">View Report 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#FFFBF1" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
 
 </a>

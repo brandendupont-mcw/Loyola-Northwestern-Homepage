@@ -1,17 +1,18 @@
+import Logo from '../public/static/images/colorado-logo-branded.svg'
 
 function Header2(){
 
     return(
         <header>
-  <div className="mx-auto bg-white  px-4 py-4 sm:px-6  lg:px-8">
+  <div className="mx-auto bg-primary-500  px-4 py-6 sm:px-6  lg:px-10">
     <div className="sm:flex sm:items-center sm:justify-between">
-      <div className="text-center sm:text-left">
-        <h1 className="text-md font-semibold  text-black  sm:text-sm">Colorado Prosecutor <br></br> Dashboards Project</h1>
+      <div className="inline-flex items-center">
+        <Logo />
       </div>
 
       <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
         <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-black px-5 py-3 text-black bg-white transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite px-5 py-3 text-ywhite transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
           type="button"
         >
           <span className="text-sm font-medium">
@@ -33,7 +34,7 @@ function Header2(){
           </svg>
         </button>
         <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-black px-5 py-3 text-black bg-white transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black  transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
           type="button"
         >
           <span className="text-sm font-medium">
@@ -55,7 +56,7 @@ function Header2(){
           </svg>
         </button>
         <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-black px-5 py-3 text-black bg-white transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
+          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black transition hover:bg-gray-50 hover:text-gray-700 focus:outline-none focus:ring"
           type="button"
         >
           <span className="text-sm font-medium">

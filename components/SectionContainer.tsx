@@ -6,7 +6,7 @@ interface Props {
 
 export default function SectionContainer({ children }: Props) {
   return (
-    <section className="bg-primary-100">
+    <section className="bg-lwhite">
       
       {children}
       

@@ -8,7 +8,7 @@ function Toolkit(){
         <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
             <div>
-              <h1 className="text-4xl font-semibold tracking-tighter text-black lg:text-5xl text-balance">
+              <h1 className="text-4xl font-semibold tracking-tighter text-primary-500 lg:text-5xl text-balance">
               Using Data to Drive Action
               </h1>
               <p className="mt-4 text-base font-medium text-black text-balance">
@@ -24,7 +24,7 @@ The Colorado Prosecutorial Dashboards toolkit and Prosecutorial Performance Indi
 </span>
                 </div>
                 <div>
-                  <h3 className="font-medium text-black">Colorado Prosecutorial Dashboard Toolkit</h3>
+                  <h3 className="font-medium text-primary-500">Colorado Prosecutorial Dashboard Toolkit</h3>
                   <p className="mt-2 text-sm text-black">
                   The <a className="text-lblue hover:underline" href="https://www.the-evaluation-center.org/wp-content/uploads/2023/11/Colorado-Prosecutorial-Dashboards_Implementation-Toolkit_Oct-2023.pdf">Colorado Prosecutorial Dashboards toolkit </a> serves as a resource for Judicial Districts; it contains guidance and resources to support them in maintaining and using dashboards to support transparency and data-driven decision-making. 
                   </p>
@@ -38,7 +38,7 @@ The Colorado Prosecutorial Dashboards toolkit and Prosecutorial Performance Indi
 </span>
                 </div>
                 <div>
-                  <h3 className="font-medium text-black">Prosecutorial Performance Indicators</h3>
+                  <h3 className="font-medium text-primary-500">Prosecutorial Performance Indicators</h3>
                   <p className="mt-2 text-sm text-black">
                   The project is rooted in a national model, the Prosecutorial Performance Indicators Project (PPI), which has a menu of 55 indicators to measure performance toward three goals: capacity & efficiency, community safety & well-being, and fairness & justice. To learn more, visit www.theppis.org <a className="text-lblue hover:underline" href="https://prosecutorialperformanceindicators.org">www.theppis.org</a>
                   </p>

@@ -1,14 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'Colorado Prosecutor Dashboards Project',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  author: 'Colorado Prosecutor Dashboards Project',
+  headerTitle: 'Colorado Prosecutor Dashboards Project',
+  description: 'The Colorado Prosecutorial Dashboards project works with prosecutors offices across the state to increase data-driven decision-making, raise awareness of disparities and support offices in addressing disparities, and increase engagement with and accountability to the public.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/colorado-logo-branded.svg',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',

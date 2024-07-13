@@ -24,14 +24,19 @@ function FirstMap() {
         pitch: 0,
       }
       
+    type DataType = {
+      position: [longitude: number, latitude: number];
+      message: string;
+    };
+    
     const LAT = 39.327800750504494
     const LONG = -105.45304562833229
 
     
     const INITIAL_VIEW_STATE  = VIEW_STATE
 
-    const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false)
-    const [hoverInfo, setHoverInfo] = useState(false);
+    const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
+    const [hoverInfo, setHoverInfo] = useState<PickingInfo<DataType>>();
 
     const mapRef = useRef(null);
 
@@ -72,9 +77,11 @@ function FirstMap() {
   }, []);
   // Callback when the pointer clicks on an object in any pickable layer
   const onClick = useCallback((info: PickingInfo, event: MjolnirEvent) => {
-    console.log('Clicked:', info, event, info.object.properties.jdist_id  ); SetSelectedJurisdiction( info.object.properties.jdist_id);
+    console.log('Clicked:', info, event, info.object.properties.jdist_id  ); SetSelectedJurisdiction( info);
   }, []);
   
+  const hoverInfoValue = hoverInfo?.object?.properties.jdist_id
+
     return (
         <div className=' '>
         <div className=' overflow-hidden'>
@@ -98,8 +105,8 @@ function FirstMap() {
 
        
                <div className='bg-white text-black h-48 w-48 font-4xl '>
-                  {SelectedJurisdiction && SelectedJurisdiction.object.properties.jdist_id} ----
-                  {hoverInfo && hoverInfo.object.properties.jdist_id}
+                  {SelectedJurisdiction && SelectedJurisdiction.object.properties.jdist_id } ----
+                  {hoverInfoValue || 'Loading...' }
                 </div>
 
         </DeckGL>

@@ -5,6 +5,7 @@ function Toolkit(){
     return(
 
         <section>
+            
         <div className="px-8 py-24 mx-auto md:px-12 lg:px-32 max-w-7xl">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-24">
             <div>

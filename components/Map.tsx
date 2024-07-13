@@ -61,11 +61,13 @@ function FirstMap() {
       getLineColor: [255,251,241],
       getFillColor: [64,18,139],
       opacity: 0.7,
+      autoHighlight: true,
       getTextBackgroundColor:	[255, 255, 255, 255],
       getLineWidth: 10,
       lineWidthMinPixels: 1,
       pickable: true,
       getText: d => `${d.object.properties.jdist_id}`,
+      getLabel:  d => `${d.object.properties.jdist_id}`,
       getPointRadius: 4,
       getTextSize: 12,
       onHover: info => setHoverInfo(info)

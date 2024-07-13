@@ -63,7 +63,7 @@ function FirstMap() {
       getText: d => `${d.object.properties.jdist_id}`,
       getPointRadius: 4,
       getTextSize: 12,
-      onHover: info => {info.object.properties ? setHoverInfo(info.object.properties.jdist_id) : 'hi there' }
+      onHover: info => setHoverInfo(info)
     }, 
   
   );
@@ -98,8 +98,8 @@ function FirstMap() {
 
        
                <div className='bg-white text-black h-48 w-48 font-4xl '>
-                  {SelectedJurisdiction} ----
-                  {hoverInfo}
+                  {SelectedJurisdiction && SelectedJurisdiction.object.properties.jdist_id} ----
+                  {hoverInfo && hoverInfo.object.properties.jdist_id}
                 </div>
 
         </DeckGL>

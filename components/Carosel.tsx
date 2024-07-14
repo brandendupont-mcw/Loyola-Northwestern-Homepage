@@ -61,7 +61,7 @@ export default function CarouselSize() {
       opts={{
         align: "start",
       }}
-      className="lg:w-full sm:w-[40%] w-[40%] "
+      className="lg:w-full sm:w-[40%] w-[25%] "
     >
   
       <CarouselContent>

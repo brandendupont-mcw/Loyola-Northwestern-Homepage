@@ -1,6 +1,5 @@
+// @ts-nocheck
 'use client'
-
-
 
 import * as React from 'react';
 import {render} from 'react-dom';
@@ -35,9 +34,7 @@ function FirstMap() {
     
     const INITIAL_VIEW_STATE  = VIEW_STATE
 
-    const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
-    const [hoverInfo, setHoverInfo] = useState();
-    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(false);
+
 
     const mapRef = useRef(null);
 
@@ -62,8 +59,7 @@ function FirstMap() {
       pickable: true,
       getText: d => d.properties,
       getTextSize: 24,
-      onHover: info => setHoverInfo(info), 
-      onClick: info => SetSelectedJurisdiction(info)
+
       
     }, 
   

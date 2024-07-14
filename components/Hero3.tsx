@@ -85,7 +85,6 @@ function Hero3(){
     
     <div className='relative'>
       <FirstMap />
-      <div>hi</div>
       </div>
     </section>
     

@@ -22,7 +22,7 @@ export default function Home({ posts }) {
   return (
     <> 
     <Hero5 />
-    <Hero3 />
+    <div className='sm:block hidden'><Hero3 /></div>
     < DashboardList />
     <div className=' bg-black p-10'>
     <div className='mx-auto max-w-8xl pt-40 pb-40  '>

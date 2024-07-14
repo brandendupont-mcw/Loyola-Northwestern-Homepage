@@ -38,7 +38,7 @@ function FirstMap() {
 
     const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
     const [hoverInfo, setHoverInfo] = useState();
-    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(false);
+    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(JurisdictionJson);
 
     const mapRef = useRef(null);
 
@@ -156,95 +156,7 @@ function FirstMap() {
                </Map >
 
                 <div className='flex justify-end p-6'>
-               <div className='bg-primary-500  text-ywhite min-h-[220px] w-[400px]  p-6 z-40 '>
-                <div className="font-bold text-2xl text-ywhite mb-2">
-                Colorado Judicial District {SelectedJurisdictionValue }  
-                </div>
-                <div><hr/></div>
-                
-                  
-                  { SelectedJurisdictionValue ? <div className="mt-2">
-                    
-                    
-                    The {filteredJurisdictionData[0].name}  Attorney's Office  {filteredJurisdictionData[0].partner_type}
 
-                    <div className="flex flex-row">
-                    
-                     {filteredJurisdictionData[0].dashboard && <div className="mt-4"> <a className="text-lblue  hover:underline p-2" href={filteredJurisdictionData[0].dashboard}>
-                      
-                      <button
-                             className="inline-flex items-center  gap-1.5 rounded-lg border border-ywhite px-2 py-3 text-ywhite transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
-                             type="button"
-                           >
-                             <span className="text-sm font-medium">
-                             Dashboard </span>
-                   
-                             <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               className="h-4 w-4"
-                               fill="none"
-                               viewBox="0 0 24 24"
-                               stroke="currentColor"
-                               stroke-width="2"
-                             >
-                               <path
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round"
-                                 d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                               />
-                             </svg>
-                           </button>
-                           </a>
-                          </div>
-                    
-                    
-                     }
-
-                    
-                     {filteredJurisdictionData[0].disparity && <div className="mt-4"> <a className="text-lblue  hover:underline p-2" href={filteredJurisdictionData[0].disparity}>
-                      
-                      <button
-                             className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite px-2 py-3 text-ywhite transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
-                             type="button"
-                           >
-                             <span className="text-sm font-medium">
-                             Disparity Analysis </span>
-                   
-                             <svg
-                               xmlns="http://www.w3.org/2000/svg"
-                               className="h-4 w-4"
-                               fill="none"
-                               viewBox="0 0 24 24"
-                               stroke="currentColor"
-                               stroke-width="2"
-                             >
-                               <path
-                                 stroke-linecap="round"
-                                 stroke-linejoin="round"
-                                 d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                              
-                              />
-
-                             </svg>
-                           </button>
-                           </a>
-                          </div>
-                    
-                    
-                    
-                    
-                    }
-                    
-                    </div>
-                    </div>
-                  
-                  :
-                                <div className="text-ywhite mt-2 ">
-                                Click a judicial district on the map to view a jurisdiction's dashboards and reports.
-                              </div>
-                              
-                  }
-                </div>
                 
                
 

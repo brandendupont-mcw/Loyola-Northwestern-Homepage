@@ -1,4 +1,5 @@
 import FirstMap from '@/components/Map'
+import SecondMap from '@/components/Map2'
 
 
 function Hero3(){
@@ -84,7 +85,7 @@ function Hero3(){
       </div>
     
     <div className='sm:block relative hidden'>
-      <FirstMap />
+      <SecondMap />
       </div>
     </section>
     

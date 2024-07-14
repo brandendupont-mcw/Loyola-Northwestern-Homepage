@@ -85,24 +85,7 @@ function Hero3(){
       </div>
     
     <div className=' relative'>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <SecondMap />
       </div>
     </section>
     

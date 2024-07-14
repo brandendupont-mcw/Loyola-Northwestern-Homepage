@@ -59,7 +59,6 @@ function FirstMap() {
       pickable: true,
       getText: d => d.properties,
       getTextSize: 24,
-
       
     }, 
   
@@ -74,8 +73,9 @@ function FirstMap() {
         <div className=' '>
         <div className=' overflow-hidden'>
 
-        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}  layers={[layer2]} 
-        getTooltip={({object}) => object && `District: ${object.properties.jdist_id}`}
+        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}
+        //layers={[layer2]} 
+        //getTooltip={({object}) => object && `District: ${object.properties.jdist_id}`}
         //</div>getTooltip={({object}: PickingInfo) => object && `${object.jdist_id}\nPopulation: ${object.jdist_id}`}
         //getCursor={() => 'url(images/custom.png), auto'}
         

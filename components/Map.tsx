@@ -130,6 +130,7 @@ function FirstMap() {
   const filteredJurisdictionData = JurisdictionData.filter(e => e.value === SelectedJurisdictionValue)
   console.log(filteredJurisdictionData)
 
+  
 
 
 
@@ -157,7 +158,7 @@ function FirstMap() {
                 <div className='flex justify-end p-6'>
                <div className='bg-primary-500  text-ywhite min-h-[220px] w-[400px]  p-6 z-40 '>
                 <div className="font-bold text-2xl text-ywhite mb-2">
-                Colorado Judicial District {SelectedJurisdictionValue || '' }  {}
+                Colorado Judicial District {SelectedJurisdictionValue }  
                 </div>
                 <div><hr/></div>
                 
@@ -165,7 +166,7 @@ function FirstMap() {
                   { SelectedJurisdictionValue ? <div className="mt-2">
                     
                     
-                    The {filteredJurisdictionData[0].name || '' }  Attorney's Office  {filteredJurisdictionData[0].partner_type || '' }
+                    The {filteredJurisdictionData[0].name}  Attorney's Office  
 
                     <div className="flex flex-row">
                     
@@ -197,7 +198,7 @@ function FirstMap() {
                           </div>
                     
                     
-                    || '' }
+                     }
 
                     
                      {filteredJurisdictionData[0].disparity && <div className="mt-4"> <a className="text-lblue  hover:underline p-2" href={filteredJurisdictionData[0].disparity}>
@@ -232,7 +233,7 @@ function FirstMap() {
                     
                     
                     
-                    || '' }
+                    }
                     
                     </div>
                     </div>

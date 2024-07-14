@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 import FirstMap from '@/components/Map'
 import SecondMap from '@/components/Map2'
-import ThirdMap from '@/components/Map3'
+import ThirdMap from '../components/map3'
 
 const MapWithNoSSR = dynamic(() => import('../components/Map2'), {
   ssr: false  // This disables server-side rendering

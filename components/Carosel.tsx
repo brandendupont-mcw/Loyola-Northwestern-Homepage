@@ -56,7 +56,7 @@ export default function CarouselSize() {
   ]
   return (
     <div className=" ">
-    <div className="sm:mx-auto grid sm:justify-center sm:justify-items-center sm:pr-20 sm:pl-20 sm:pl-6">
+    <div className="mx-auto grid justify-center justify-items-center sm:pr-20 sm:pl-20 sm:pl-6">
     <Carousel
       opts={{
         align: "start",

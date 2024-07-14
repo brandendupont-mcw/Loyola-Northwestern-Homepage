@@ -84,7 +84,7 @@ function Hero3(){
             
       </div>
     
-    <div className='sm:block relative hidden'>
+    <div className=' relative'>
       <SecondMap />
       </div>
     </section>

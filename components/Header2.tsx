@@ -11,11 +11,7 @@ function Header2(){
       </div>
 
       <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-      <a href="https://loyolaccj.org">
-        <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite px-5 py-3 text-ywhite transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
-          type="button"
-        >
+      <a           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite px-5 py-3 text-ywhite transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring" href="https://loyolaccj.org">
           <span className="text-sm font-medium">
  Loyola CCJ </span>
 
@@ -33,13 +29,8 @@ function Header2(){
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             />
           </svg>
-        </button>
         </a>
-        <a href="https://prosecutorialperformanceindicators.org">
-        <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black  transition hover:bg-ywhite hover:text-primary-500  focus:outline-none focus:ring"
-          type="button"
-        >
+        <a           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black  transition hover:bg-ywhite hover:text-primary-500  focus:outline-none focus:ring" href="https://prosecutorialperformanceindicators.org">
           <span className="text-sm font-medium">
  PPIS </span>
 
@@ -57,13 +48,11 @@ function Header2(){
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             />
           </svg>
-        </button>
+
         </a>
-        <a href="https://www.the-evaluation-center.org/">
-        <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
-          type="button"
-        >
+        <a           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring" href="https://www.the-evaluation-center.org/">
+
+          
           <span className="text-sm font-medium">
            The Evaluation Center</span>
 
@@ -81,7 +70,7 @@ function Header2(){
               d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
             />
           </svg>
-        </button>
+       
         </a>
       </div>
     </div>

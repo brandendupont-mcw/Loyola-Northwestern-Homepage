@@ -56,17 +56,17 @@ export default function CarouselSize() {
   ]
   return (
     <div className=" ">
-    <div className="mx-auto grid sm:justify-center sm:justify-items-center sm:pr-20 sm:pl-20 pl-6">
+    <div className="sm:mx-auto grid sm:justify-center sm:justify-items-center sm:pr-20 sm:pl-20 sm:pl-6">
     <Carousel
       opts={{
         align: "start",
       }}
-      className="lg:w-full w-[40%] "
+      className="lg:w-full sm:w-[40%] w-[40%] "
     >
   
       <CarouselContent>
         {image_list.map((e, index) => (
-          <CarouselItem key={index} className="xl:basis-1/2 2xl:basis-1/3">
+          <CarouselItem key={index} className="xl:basis-1/2 2xl:basis-1/3 ">
             <div className="p-1">
               <Card >
                 <CardContent className="flex  items-center justify-center p-[1px] ">

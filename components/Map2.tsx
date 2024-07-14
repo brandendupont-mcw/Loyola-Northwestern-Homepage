@@ -90,18 +90,6 @@ function FirstMap() {
               [64,18,139],
             ]);
 
-    const layer1 = new PolygonLayer({
-      id: 'PolygonLayer',
-      data: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf-zipcodes.json',
-    
-      getPolygon: d => d.contour,
-      getElevation: d => d.population / d.area / 10,
-      getFillColor: d => [d.population / d.area / 10,10,20],
-      getLineColor: [255, 255, 255],
-      getLineWidth: 200,
-      lineWidthMinPixels: 1,
-      pickable: true
-    });
 
     const layer2 = new GeoJsonLayer({
       id: 'Judicial Districts',
@@ -125,8 +113,6 @@ function FirstMap() {
   );
 
   
-  const SelectedJurisdictionValue = SelectedJurisdiction?.object?.properties.jdist_id
-  
 
 
 
@@ -135,7 +121,7 @@ function FirstMap() {
         <div className=' '>
         <div className=' overflow-hidden'>
 
-        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}  layers={[layer1, layer2]} 
+        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}  layers={[layer2]} 
         getTooltip={({object}) => object && `District: ${object.properties.jdist_id}`}
         //</div>getTooltip={({object}: PickingInfo) => object && `${object.jdist_id}\nPopulation: ${object.jdist_id}`}
         //getCursor={() => 'url(images/custom.png), auto'}

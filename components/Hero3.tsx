@@ -1,5 +1,10 @@
+import dynamic from 'next/dynamic';
 import FirstMap from '@/components/Map'
 import SecondMap from '@/components/Map2'
+
+const MapWithNoSSR = dynamic(() => import('../components/Map2'), {
+  ssr: false  // This disables server-side rendering
+});
 
 
 
@@ -86,7 +91,7 @@ function Hero3(){
       </div>
     
     <div className=' relative'>
-      <SecondMap />
+      <MapWithNoSSR />
       </div>
     </section>
     

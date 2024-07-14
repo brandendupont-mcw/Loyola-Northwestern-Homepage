@@ -14,7 +14,7 @@ import type {PickingInfo} from '@deck.gl/core';
 import {MjolnirEvent} from 'mjolnir.js';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {scaleThreshold, scaleOrdinal} from 'd3-scale';
-import JurisdictionJson from "../viz/data.json"
+//import JurisdictionJson from "../viz/data.json"
 
 
 
@@ -38,11 +38,11 @@ function FirstMap() {
 
     const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
     const [hoverInfo, setHoverInfo] = useState();
-    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(JurisdictionJson);
+    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(false);
 
     const mapRef = useRef(null);
 
-    const JurisdictionData = JSON.parse(JSON.stringify(JurisdictionJson)); 
+    //const JurisdictionData = JSON.parse(JSON.stringify(JurisdictionJson)); 
 
     //const filteredJurisdictions = JurisdictionData.filter(e => e.value === SelectedJurisdiction);
 

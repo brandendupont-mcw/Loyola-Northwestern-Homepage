@@ -36,9 +36,9 @@ function FirstMap() {
     
     const INITIAL_VIEW_STATE  = VIEW_STATE
 
-    const [SelectedJurisdiction, SetSelectedJurisdiction] = useState();
+    const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
     const [hoverInfo, setHoverInfo] = useState();
-    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState();
+    const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(false);
 
     const mapRef = useRef(null);
 
@@ -125,19 +125,14 @@ function FirstMap() {
   );
 
   
-  const hoverInfoValue = hoverInfo?.object?.properties.jdist_id
   const SelectedJurisdictionValue = SelectedJurisdiction?.object?.properties.jdist_id
 
-const filteredJurisdictionData = JurisdictionData.filter(e => e.value === SelectedJurisdictionValue)
-console.log(filteredJurisdictionData)
+  const filteredJurisdictionData = JurisdictionData.filter(e => e.value === SelectedJurisdictionValue)
+  console.log(filteredJurisdictionData)
 
 
 
-  const listItems = JurisdictionData.map(e =>
-    <li key={e.value}>
-      {e.value}
-    </li>
-  );
+
 
     return (
         <div className=' '>

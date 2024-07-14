@@ -22,6 +22,7 @@ export default function Home({ posts }) {
   return (
     <> 
     <Hero5 />
+    <Hero3 />
     < DashboardList />
     <div className=' bg-black p-10'>
     <div className='mx-auto max-w-8xl pt-40 pb-40  '>

@@ -1,4 +1,3 @@
-// @ts-nocheck
 'use client'
 
 
@@ -48,56 +47,14 @@ function FirstMap() {
 
     //setFilteredJurisdictionsData(filteredJurisdictions)
 
-    const COLOR_SCALE = scaleOrdinal()
-            .domain([ 4, 14, 15,16, 1, 2, 5,
-              6,
-              7,
-              8,
-              9,
-              11,
-              12,
-              17,
-              18,
-              19,
-              20,
-              21,
-              22,
-              3,
-              10,
-              13,
-              ])
-            .range([[255,231 ,155],
-              [255,231 ,155],
-              [255,231 ,155],
-              [255,231 ,155],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-              [64,18,139],
-            ]);
-
 
     const layer2 = new GeoJsonLayer({
       id: 'Judicial Districts',
       data: 'https://raw.githubusercontent.com/brandendupont-mcw/Colorado-Data-Prosecution-Homepage/main/viz/judicial2.geojson',
       filled: true,
       getLineColor: [255,251,241],
-      //getFillColor: [64,18,139],
-      getFillColor: f => COLOR_SCALE(f.properties.jdist_id),
+      getFillColor: [64,18,139],
+      //getFillColor: f => COLOR_SCALE(f.properties.jdist_id),
       opacity: 0.2,
       autoHighlight: true,
       getLineWidth: 10,

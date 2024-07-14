@@ -126,10 +126,6 @@ function FirstMap() {
 
   
   const SelectedJurisdictionValue = SelectedJurisdiction?.object?.properties.jdist_id
-
-  const filteredJurisdictionData = JurisdictionData.filter(e => e.value === SelectedJurisdictionValue)
-  console.log(filteredJurisdictionData)
-
   
 
 

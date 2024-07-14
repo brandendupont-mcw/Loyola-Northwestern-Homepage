@@ -56,12 +56,12 @@ export default function CarouselSize() {
   ]
   return (
     <div className=" ">
-    <div className="mx-auto grid sm:justify-center justify-items-center pr-20 pl-20">
+    <div className="mx-auto grid sm:justify-center sm:justify-items-center sm:pr-20 sm:pl-20 pl-6">
     <Carousel
       opts={{
         align: "start",
       }}
-      className="sm:w-full w-[70%] "
+      className="lg:w-full w-[40%] "
     >
   
       <CarouselContent>

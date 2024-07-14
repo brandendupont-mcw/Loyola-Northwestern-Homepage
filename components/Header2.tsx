@@ -11,6 +11,7 @@ function Header2(){
       </div>
 
       <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+      <a href="https://loyolaccj.org">
         <button
           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite px-5 py-3 text-ywhite transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
           type="button"
@@ -33,6 +34,8 @@ function Header2(){
             />
           </svg>
         </button>
+        </a>
+        <a href="https://prosecutorialperformanceindicators.org">
         <button
           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black  transition hover:bg-ywhite hover:text-primary-500  focus:outline-none focus:ring"
           type="button"
@@ -55,6 +58,8 @@ function Header2(){
             />
           </svg>
         </button>
+        </a>
+        <a href="https://www.the-evaluation-center.org/">
         <button
           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
           type="button"
@@ -77,6 +82,7 @@ function Header2(){
             />
           </svg>
         </button>
+        </a>
       </div>
     </div>
   </div>

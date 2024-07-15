@@ -8,7 +8,7 @@ function Hero3(){
 
     return(
 
-
+<div className="pr-1 ">
 <div className="max-w-4xl  lg:max-w-full " >
   
 
@@ -97,6 +97,7 @@ function Hero3(){
     
 
     
+    </div>
     </div>
     )
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from 'next/dynamic';
 import FirstMap from '@/components/Map'
 import SecondMap from '@/components/Map2'
@@ -91,7 +93,7 @@ function Hero3(){
       </div>
     
     <div className=' relative'>
-      <ThirdMap />
+      <SecondMap />
       </div>
     </section>
     

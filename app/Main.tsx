@@ -14,7 +14,7 @@ import CarouselSpacing from "@/components/Carosel"
 import Timeline from "@/components/Timeline"
 import Toolkit from "@/components/Toolkit"
 import Resources from '@/components/Resources'
-import LogoGrid from '@/components/LogoGrid'
+import LogoSection from '@/components/LogoSection'
 import Footer2 from '@/components/Footer2'
 
 const MAX_DISPLAY = 5
@@ -34,7 +34,7 @@ export default function Home({ posts }) {
     </div>
     <Toolkit />
     <Timeline />
-    <LogoGrid />
+    <LogoSection />
     <Footer2 />
     </>
   )

@@ -2,7 +2,8 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import Hero from '@/components/Hero'
 import Hero2 from '@/components/Hero2'
-import Hero3 from '@/components/Hero3'
+//import Hero3 from '@/components/Hero3'
+import Hero3 from '../app/mapcomponents/Hero3'
 import Hero4 from '@/components/Hero4'
 import Hero5 from '@/components/Hero5'
 import DashboardList from '@/components/DashboardList'
@@ -22,7 +23,7 @@ export default function Home({ posts }) {
   return (
     <> 
     <Hero5 />
-    <div className='sm:block hidden'><Hero3 /></div>
+    <div className=''><Hero3 /></div>
     < DashboardList />
     <div className=' bg-black p-10'>
     <div className='mx-auto max-w-8xl pt-40 pb-40  '>

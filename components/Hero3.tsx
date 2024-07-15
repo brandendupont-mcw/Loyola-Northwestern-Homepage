@@ -2,12 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import FirstMap from '@/components/Map'
-import SecondMap from '@/components/Map2'
-
-const MapWithNoSSR = dynamic(() => import('../components/Map2'), {
-  ssr: false  // This disables server-side rendering
-});
-
 
 
 function Hero3(){
@@ -19,7 +13,7 @@ function Hero3(){
 <div className="max-w-4xl  lg:max-w-full " >
   
 
-    <section className="overflow-hidden bg-white sm:grid sm:grid-cols-2 ">
+    <section className=" bg-white grid sm:grid-cols-2 grid-row ">
       <div className="p-8 md:p-12   grid place-items-center">
         
 
@@ -92,8 +86,13 @@ function Hero3(){
             
       </div>
     
-    <div className=' relative'>
-      <SecondMap />
+    <div className=' relative sm:block hidden '>
+      <FirstMap />
+      </div>
+      <div className="mr-10 ml-10">
+      <div className=' relative block sm:hidden h-[400px] w-full '>
+      <FirstMap />
+      </div>
       </div>
     </section>
     

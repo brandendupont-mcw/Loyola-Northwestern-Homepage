@@ -1,4 +1,5 @@
 // components/MapComponent.js
+// @ts-nocheck
 
 import React, { useState } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';

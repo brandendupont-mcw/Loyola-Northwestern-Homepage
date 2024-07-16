@@ -89,6 +89,8 @@ function Hero3(){
     <div className='relative sm:block hidden '>
       <div className="p-16">
     <iframe title="desktop-map"  aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no" width="100%" height="700" data-external="1"></iframe>
+    <div className=" text-2xl text-primary-500 font-bold ml-10">Colorado Judicial Districts</div>
+        <div className=" text-md text-black mx-auto mt-2 ml-10">Click a judicial district on the map to view a jurisdiction's dashboards and reports.</div>
       </div>
       </div>
       <div className="mr-6 ml-6">

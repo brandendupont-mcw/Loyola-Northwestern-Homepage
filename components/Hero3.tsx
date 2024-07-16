@@ -1,7 +1,7 @@
 "use client";
 
 import FirstMap from '@/components/Map'
-
+import { ErrorBoundary } from "react-error-boundary";
 
 function Hero3(){
 
@@ -84,7 +84,9 @@ function Hero3(){
               </section>
             
       </div>
-    
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+
+
     <div className=' relative sm:block hidden '>
       <FirstMap />
       </div>
@@ -93,6 +95,7 @@ function Hero3(){
       <FirstMap />
       </div>
       </div>
+      </ErrorBoundary>
     </section>
     
 

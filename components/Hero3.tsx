@@ -93,7 +93,7 @@ function Hero3(){
       </div>
       <div className="mr-6 ml-6">
       <div className=' relative block sm:hidden w-full '>
-      <iframe title="" aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no"  width="340" height="477" data-external="1"></iframe>
+      <iframe  aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no"  width="340" height="477" data-external="1"></iframe>
       </div>
       </div>
     </section>

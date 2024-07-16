@@ -5,7 +5,7 @@ import Map, {Source, Layer} from 'react-map-gl';
 //import ReactMapGL, { ScaleControl, NavigationControl, MapRef, }  from "react-map-gl"
 import {useRef} from 'react';
 import {useState, useEffect, useMemo, useCallback} from 'react';
-import type {FillLayerSpecification} from 'react-map-gl';
+//import type FillLayerSpecification from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 //import JurisdictionJson from "../viz/data.json"
 
@@ -43,7 +43,7 @@ function FirstMap() {
     }, []);
 
 
-    const dataLayer: FillLayerSpecification = {
+    const dataLayer = {
       id: 'data',
       type: 'fill',
       paint: {

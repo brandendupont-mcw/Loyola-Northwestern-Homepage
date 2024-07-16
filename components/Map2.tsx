@@ -1,10 +1,11 @@
 "use client";
 
 import React from 'react';
-import Map, { Marker } from 'react-map-gl';
+import Map, {Source, Layer} from 'react-map-gl';
 //import ReactMapGL, { ScaleControl, NavigationControl, MapRef, }  from "react-map-gl"
 import {useRef} from 'react';
-
+import {useState, useEffect, useMemo, useCallback} from 'react';
+import type {FillLayerSpecification} from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 //import JurisdictionJson from "../viz/data.json"
 
@@ -28,7 +29,41 @@ function FirstMap() {
     
     const INITIAL_VIEW_STATE  = VIEW_STATE
 
+    const [year, setYear] = useState(2015);
+    const [allData, setAllData] = useState(null);
 
+    useEffect(() => {
+      /* global fetch */
+      fetch(
+        'https://raw.githubusercontent.com/uber/react-map-gl/master/examples/.data/us-income.geojson'
+      )
+        .then(resp => resp.json())
+        .then(json => setAllData(json))
+        .catch(err => console.error('Could not load data', err)); // eslint-disable-line
+    }, []);
+
+
+    const dataLayer: FillLayerSpecification = {
+      id: 'data',
+      type: 'fill',
+      paint: {
+        'fill-color': {
+          property: 'percentile',
+          stops: [
+            [0, '#3288bd'],
+            [1, '#66c2a5'],
+            [2, '#abdda4'],
+            [3, '#e6f598'],
+            [4, '#ffffbf'],
+            [5, '#fee08b'],
+            [6, '#fdae61'],
+            [7, '#f46d43'],
+            [8, '#d53e4f']
+          ]
+        },
+        'fill-opacity': 0.3
+      }
+    };
 
     const mapRef = useRef(null);
 
@@ -64,6 +99,9 @@ function FirstMap() {
  
             
             >
+                      <Source type="geojson" data={allData}>
+          <Layer {...dataLayer} />
+        </Source>
                               <div className='flex justify-end p-6'>
                <div className='bg-primary-500  text-ywhite min-h-[220px] w-[400px]  p-6 z-40 '>
                 <div className="font-bold text-2xl text-ywhite mb-2">

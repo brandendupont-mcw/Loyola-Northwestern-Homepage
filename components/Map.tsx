@@ -15,6 +15,7 @@ import {MjolnirEvent} from 'mjolnir.js';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import {scaleThreshold, scaleOrdinal} from 'd3-scale';
 import JurisdictionJson from "../viz/data.json"
+import { ErrorBoundary } from "react-error-boundary";
 
 
 
@@ -136,6 +137,8 @@ function FirstMap() {
 
 
     return (
+      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+
         <div className=' '>
         <div className=' overflow-hidden'>
 
@@ -253,6 +256,7 @@ function FirstMap() {
         
       </div>
       </div>
+      </ErrorBoundary>
     );
   }
 

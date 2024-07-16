@@ -40,7 +40,7 @@ function Hero3(){
                         <div>
                           <h3 className="font-medium text-primary-500">18</h3>
                           <p className="mt-2 text-sm text-black">
-                          Using Data to Drive Change
+                          Use Data to Drive Change
                           </p>
                         </div>
                       </div>

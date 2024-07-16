@@ -64,6 +64,20 @@ function FirstMap() {
  
             
             >
+                              <div className='flex justify-end p-6'>
+               <div className='bg-primary-500  text-ywhite min-h-[220px] w-[400px]  p-6 z-40 '>
+                <div className="font-bold text-2xl text-ywhite mb-2">
+                Colorado Judicial District 
+                </div>
+                <div><hr/></div>
+                
+                  
+   
+                </div>
+                
+               
+
+                </div>
                </Map >
 
                 <div className='flex justify-end p-6'>

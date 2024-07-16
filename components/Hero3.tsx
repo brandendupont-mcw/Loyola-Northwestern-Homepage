@@ -86,8 +86,8 @@ function Hero3(){
     <div className=' relative sm:block hidden '>
       <SecondMap />
       </div>
-      <div className="mr-10 ml-10">
-      <div className=' relative block sm:hidden h-[400px] w-full '>
+      <div className="mr-6 ml-6">
+      <div className=' relative block sm:hidden w-full '>
       <SecondMap />
       </div>
       </div>

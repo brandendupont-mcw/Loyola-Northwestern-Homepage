@@ -136,7 +136,7 @@ function FirstMap() {
 
 
     return (
-      <ErrorBoundary fallback={<div>Something went wrong</div>}>
+
 
         <div className=' '>
         <div className=' overflow-hidden'>
@@ -152,6 +152,7 @@ function FirstMap() {
             mapStyle={"mapbox://styles/branden-dupont/ckt0h6w5800vb18qq9lniiuoc"}
             mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5Z21oZWZmMDE4eDJrbjM5N3Rlb3N0cCJ9.c2RlqXh58b3eYU_9pDq_1A'}
             ref={mapRef}
+            style={{width:"100%", height:800}}
  
             
             >
@@ -255,7 +256,7 @@ function FirstMap() {
         
       </div>
       </div>
-      </ErrorBoundary>
+
     );
   }
 

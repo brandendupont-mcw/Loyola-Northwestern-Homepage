@@ -39,6 +39,18 @@ function FirstMap() {
     const [SelectedJurisdiction, SetSelectedJurisdiction] = useState(false);
     const [hoverInfo, setHoverInfo] = useState();
     const [filteredJurisdictionsData, setFilteredJurisdictionsData] = useState(false);
+    const [allData, setAllData] = useState(null);
+
+    useEffect(() => {
+      /* global fetch */
+      fetch(
+        'https://raw.githubusercontent.com/brandendupont-mcw/Colorado-Data-Prosecution-Homepage/main/viz/judicial2.geojson'
+      )
+        .then(resp => resp.json())
+        .then(json => setAllData(json))
+        .catch(err => console.error('Could not load data', err)); // eslint-disable-line
+    }, []);
+
 
     const mapRef = useRef(null);
 
@@ -90,22 +102,10 @@ function FirstMap() {
               [64,18,139],
             ]);
 
-    const layer1 = new PolygonLayer({
-      id: 'PolygonLayer',
-      data: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/sf-zipcodes.json',
-    
-      getPolygon: d => d.contour,
-      getElevation: d => d.population / d.area / 10,
-      getFillColor: d => [d.population / d.area / 10,10,20],
-      getLineColor: [255, 255, 255],
-      getLineWidth: 200,
-      lineWidthMinPixels: 1,
-      pickable: true
-    });
 
     const layer2 = new GeoJsonLayer({
       id: 'Judicial Districts',
-      data: 'https://raw.githubusercontent.com/brandendupont-mcw/Colorado-Data-Prosecution-Homepage/main/viz/judicial2.geojson',
+      data: allData,
       filled: true,
       getLineColor: [255,251,241],
       //getFillColor: [64,18,139],
@@ -141,13 +141,14 @@ function FirstMap() {
         <div className=' '>
         <div className=' overflow-hidden'>
 
-        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}  layers={[layer1, layer2]} 
+        <DeckGL          initialViewState={INITIAL_VIEW_STATE}  controller={true}  layers={[layer2]} 
         getTooltip={({object}) => object && `District: ${object.properties.jdist_id}`}
         //</div>getTooltip={({object}: PickingInfo) => object && `${object.jdist_id}\nPopulation: ${object.jdist_id}`}
         //getCursor={() => 'url(images/custom.png), auto'}
         
         >
         < Map     
+  
             reuseMaps
             mapStyle={"mapbox://styles/branden-dupont/ckt0h6w5800vb18qq9lniiuoc"}
             mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5Z21oZWZmMDE4eDJrbjM5N3Rlb3N0cCJ9.c2RlqXh58b3eYU_9pDq_1A'}

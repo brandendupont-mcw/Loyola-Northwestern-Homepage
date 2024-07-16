@@ -84,11 +84,11 @@ function Hero3(){
       </div>
 
     <div className=' relative sm:block hidden '>
-      <SecondMap />
+      <FirstMap />
       </div>
       <div className="mr-6 ml-6">
       <div className=' relative block sm:hidden w-full '>
-      <SecondMap />
+      <FirstMap />
       </div>
       </div>
     </section>

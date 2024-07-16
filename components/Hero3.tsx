@@ -55,7 +55,7 @@ function Hero3(){
                         </div>
                         <div>
                           <h3 className="font-medium text-primary-500">15</h3>
-                          <p className="mt-2 text-md text-black">
+                          <p className="mt-2 text-sm  text-black">
                           Released External Dashboards and Data Stories
                           </p>
                         </div>
@@ -73,7 +73,7 @@ function Hero3(){
                         <div>
                           <h3 className="font-medium text-primary-500">8</h3>
                           <p className="mt-2 text-sm text-black">
-                          Analyzed Racial and Ethnic Disparities in their office 
+                          Analyzed Racial and Ethnic Disparities in their Office 
                           </p>
                         </div>
                       </div>

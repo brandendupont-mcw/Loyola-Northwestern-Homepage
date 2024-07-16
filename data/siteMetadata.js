@@ -9,7 +9,7 @@ const siteMetadata = {
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/colorado-logo-branded.svg',
-  socialBanner: '/static/images/media-share.png',
+  socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',
   github: 'https://github.com',

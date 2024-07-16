@@ -1,17 +1,11 @@
-// @ts-nocheck
 "use client";
 
-import * as React from 'react';
-import {render} from 'react-dom';
+import React from 'react';
 import Map, { Marker } from 'react-map-gl';
-import DeckGL, {GeoJsonLayer, PolygonLayer, TripsLayer, FlyToInterpolator } from 'deck.gl';
 //import ReactMapGL, { ScaleControl, NavigationControl, MapRef, }  from "react-map-gl"
-import {useRef, useCallback, useState, useEffect} from 'react';
-import type {Feature, Geometry} from 'geojson';
-import type {PickingInfo} from '@deck.gl/core';
-import {MjolnirEvent} from 'mjolnir.js';
+import {useRef} from 'react';
+
 import 'mapbox-gl/dist/mapbox-gl.css';
-import {scaleThreshold, scaleOrdinal} from 'd3-scale';
 //import JurisdictionJson from "../viz/data.json"
 
 
@@ -45,24 +39,8 @@ function FirstMap() {
     //setFilteredJurisdictionsData(filteredJurisdictions)
 
 
-    const layer2 = new GeoJsonLayer({
-      id: 'Judicial Districts',
-      data: 'https://raw.githubusercontent.com/brandendupont-mcw/Colorado-Data-Prosecution-Homepage/main/viz/judicial2.geojson',
-      filled: true,
-      getLineColor: [255,251,241],
-      getFillColor: [64,18,139],
-      //getFillColor: f => COLOR_SCALE(f.properties.jdist_id),
-      opacity: 0.2,
-      autoHighlight: true,
-      getLineWidth: 10,
-      lineWidthMinPixels: 1,
-      pickable: true,
-      getText: d => d.properties,
-      getTextSize: 24,
-      
-    }, 
-  
-  );
+
+
 
   
 
@@ -73,18 +51,15 @@ function FirstMap() {
         <div className=' '>
         <div className=' overflow-hidden'>
 
-        <DeckGL initialViewState={INITIAL_VIEW_STATE} controller={true}
-        //layers={[layer2]} 
-        //getTooltip={({object}) => object && `District: ${object.properties.jdist_id}`}
-        //</div>getTooltip={({object}: PickingInfo) => object && `${object.jdist_id}\nPopulation: ${object.jdist_id}`}
-        //getCursor={() => 'url(images/custom.png), auto'}
-        
-        >
+
+
         < Map     
             reuseMaps
+            initialViewState={INITIAL_VIEW_STATE}
             mapStyle={"mapbox://styles/branden-dupont/ckt0h6w5800vb18qq9lniiuoc"}
-            mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5Z21oZWZmMDE4eDJrbjM5N3Rlb3N0cCJ9.c2RlqXh58b3eYU_9pDq_1A'}
+            mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5b2pscW1kMGgwZjJpcHdtMDhhZjg3ZyJ9.jv_6ksQROEiuvXdl6dwoGw'}
             ref={mapRef}
+            style={{width:"100%", height:800}}
     
  
             
@@ -97,7 +72,7 @@ function FirstMap() {
                
 
                 </div>
-        </DeckGL>
+  
         
       </div>
       </div>

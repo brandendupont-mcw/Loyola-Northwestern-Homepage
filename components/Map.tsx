@@ -3,8 +3,7 @@
 
 
 
-import * as React from 'react';
-import {render} from 'react-dom';
+import React from 'react';
 import Map, { Marker } from 'react-map-gl';
 import DeckGL, {GeoJsonLayer, PolygonLayer, TripsLayer, FlyToInterpolator } from 'deck.gl';
 //import ReactMapGL, { ScaleControl, NavigationControl, MapRef, }  from "react-map-gl"

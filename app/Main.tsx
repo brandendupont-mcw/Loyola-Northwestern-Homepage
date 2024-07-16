@@ -16,6 +16,7 @@ import Toolkit from "@/components/Toolkit"
 import Resources from '@/components/Resources'
 import LogoSection from '@/components/LogoSection'
 import Footer2 from '@/components/Footer2'
+import Map2 from '@/components/Map2'
 
 const MAX_DISPLAY = 5
 

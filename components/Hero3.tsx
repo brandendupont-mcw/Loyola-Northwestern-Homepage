@@ -1,7 +1,5 @@
-"use client";
-
 import FirstMap from '@/components/Map'
-import { ErrorBoundary } from "react-error-boundary";
+import SecondMap from '@/components/Map2'
 
 function Hero3(){
 
@@ -84,18 +82,15 @@ function Hero3(){
               </section>
             
       </div>
-      <ErrorBoundary fallback={<div>Something went wrong</div>}>
-
 
     <div className=' relative sm:block hidden '>
-      <FirstMap />
+      <SecondMap />
       </div>
       <div className="mr-10 ml-10">
       <div className=' relative block sm:hidden h-[400px] w-full '>
-      <FirstMap />
+      <SecondMap />
       </div>
       </div>
-      </ErrorBoundary>
     </section>
     
 

@@ -27,7 +27,7 @@ The Colorado Prosecutorial Dashboards toolkit and Prosecutorial Performance Indi
                 <div>
                   <h3 className="font-medium text-primary-500">Colorado Prosecutorial Dashboard Toolkit</h3>
                   <p className="mt-2 text-sm text-black">
-                  The <a className="text-lblue hover:underline" href="https://www.the-evaluation-center.org/wp-content/uploads/2023/11/Colorado-Prosecutorial-Dashboards_Implementation-Toolkit_Oct-2023.pdf">Colorado Prosecutorial Dashboards toolkit </a> serves as a resource for Judicial Districts; it contains guidance and resources to support them in maintaining and using dashboards to support transparency and data-driven decision-making. 
+                  The <a className="text-lblue hover:underline" href="https://drive.google.com/file/d/1bNW5ffYwHBM3Z4cSfW4iO9ghlSZJK0zS/view?usp=drive_link">Colorado Prosecutorial Dashboards toolkit </a> serves as a resource for Judicial Districts; it contains guidance and resources to support them in maintaining and using dashboards to support transparency and data-driven decision-making. 
                   </p>
                 </div>
               </div>

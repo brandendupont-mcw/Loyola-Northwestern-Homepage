@@ -86,7 +86,7 @@ function Hero3(){
 
 
 
-    <div className='relative sm:block hidden'>
+    <div className='relative sm:block hidden '>
       <div className="p-16">
     <iframe title="desktop-map"  aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no" width="100%" height="700" data-external="1"></iframe>
       </div>

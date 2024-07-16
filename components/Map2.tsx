@@ -35,7 +35,7 @@ function FirstMap() {
     useEffect(() => {
       /* global fetch */
       fetch(
-        'https://raw.githubusercontent.com/uber/react-map-gl/master/examples/.data/us-income.geojson'
+        'https://docs.mapbox.com/mapbox-gl-js/assets/ne_110m_admin_1_states_provinces_shp.geojson'
       )
         .then(resp => resp.json())
         .then(json => setAllData(json))
@@ -44,8 +44,9 @@ function FirstMap() {
 
 
     const dataLayer = {
-      id: 'data',
+      id: 'states-layer',
       type: 'fill',
+      source: 'states',
       paint: {
         'fill-color': {
           property: 'percentile',
@@ -61,7 +62,7 @@ function FirstMap() {
             [8, '#d53e4f']
           ]
         },
-        'fill-opacity': 0.3
+        'fill-opacity': 0.9
       }
     };
 

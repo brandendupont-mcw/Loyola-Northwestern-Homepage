@@ -38,9 +38,9 @@ function Hero3(){
                               </span>
                         </div>
                         <div>
-                          <h3 className="font-medium text-primary-500">15</h3>
+                          <h3 className="font-medium text-primary-500">18</h3>
                           <p className="mt-2 text-sm text-black">
-                          Released External Dashboards
+                          Using Data to Drive Change
                           </p>
                         </div>
                       </div>
@@ -54,9 +54,9 @@ function Hero3(){
                               </span>
                         </div>
                         <div>
-                          <h3 className="font-medium text-primary-500">8</h3>
+                          <h3 className="font-medium text-primary-500">15</h3>
                           <p className="mt-2 text-md text-black">
-                          Analyzed Racial and Ethnic Disparities in their office
+                          Released External Dashboards and Data Stories
                           </p>
                         </div>
                       </div>
@@ -71,9 +71,9 @@ function Hero3(){
                               </span>
                         </div>
                         <div>
-                          <h3 className="font-medium text-primary-500">15</h3>
+                          <h3 className="font-medium text-primary-500">8</h3>
                           <p className="mt-2 text-sm text-black">
-                          Published External Data Stories in their Jurisdiction.
+                          Analyzed Racial and Ethnic Disparities in their office 
                           </p>
                         </div>
                       </div>

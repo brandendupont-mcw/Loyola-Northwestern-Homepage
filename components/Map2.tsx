@@ -8,7 +8,7 @@ import {useRef} from 'react';
 import {useState, useEffect, useMemo, useCallback} from 'react';
 //import type FillLayerSpecification from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-//import JurisdictionJson from "../viz/data.json"
+import JurisdictionJson from "../viz/data.json"
 
 
 
@@ -36,36 +36,36 @@ function FirstMap() {
     useEffect(() => {
       /* global fetch */
       fetch(
-        'https://docs.mapbox.com/mapbox-gl-js/assets/ne_110m_admin_1_states_provinces_shp.geojson'
+        'https://docs.mapbox.com/mapbox-gl-js/assets/us_states.geojson'
       )
         .then(resp => resp.json())
         .then(json => setAllData(json))
         .catch(err => console.error('Could not load data', err)); // eslint-disable-line
     }, []);
 
+    const states = ['New York', 'Pennsylvania'];
+    const colors = ['#F0F', '#FF0'];
+    const statesAndColors = [1, '#F0F', 2, '#FF0'];
+
+
 
     const dataLayer = {
-      id: 'states-layer',
+      id: 'state-fills',
       type: 'fill',
       source: 'states',
+      layout: {},
       paint: {
-        'fill-color': {
-          property: 'percentile',
-          stops: [
-            [0, '#3288bd'],
-            [1, '#66c2a5'],
-            [2, '#abdda4'],
-            [3, '#e6f598'],
-            [4, '#ffffbf'],
-            [5, '#fee08b'],
-            [6, '#fdae61'],
-            [7, '#f46d43'],
-            [8, '#d53e4f']
+          'fill-color': '#627BC1',
+          'fill-opacity': [
+              'case',
+              ['boolean', ['feature-state', 'hover'], false],
+              1,
+              0.5
           ]
-        },
-        'fill-opacity': 0.9
       }
-    };
+  }
+
+    
 
     const mapRef = useRef(null);
 

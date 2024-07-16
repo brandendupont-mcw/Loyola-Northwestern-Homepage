@@ -1,5 +1,6 @@
 import FirstMap from '@/components/Map'
 import SecondMap from '@/components/Map2'
+import Script from 'next/script'
 
 function Hero3(){
 
@@ -15,7 +16,7 @@ function Hero3(){
         
 
       <section>
-                <div className="px-8 py-24 mx-auto md:px-4 lg:px-10 max-w-7xl">
+                <div className="px-8  mx-auto md:px-4 lg:px-10 max-w-7xl">
                   <div className="grid grid-cols-1 gap-12 2xl:grid-cols-2 2xl:gap-24">
                     <div>
                       <h1 className="text-2xl font-semibold   text-primary-500 lg:text-4xl text-balance">
@@ -83,12 +84,16 @@ function Hero3(){
             
       </div>
 
-    <div className=' relative sm:block hidden '>
-      <FirstMap />
+
+
+    <div className='relative sm:block hidden'>
+      <div className="p-16">
+    <iframe  aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no" width="100%" height="700" data-external="1"></iframe>
+      </div>
       </div>
       <div className="mr-6 ml-6">
       <div className=' relative block sm:hidden w-full '>
-      <FirstMap />
+      <iframe title="" aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no"  width="340" height="477" data-external="1"></iframe>
       </div>
       </div>
     </section>

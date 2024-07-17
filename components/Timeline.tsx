@@ -55,7 +55,7 @@ function Timeline(){
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 text-sm font-normal leading-none text-lblue dark:text-gray-500">January, 2023 </time>
         <h3 className="text-lg font-semibold text-ywhite">5 Jurisdictions Join</h3>
-        <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">Five new Judicial Districts join the project: the 3rd, 10th, 12th, 17th, and 21st. Read more <a className="text-lblue hover:underline" href="https://coloradolab.org/wp-content/uploads/2024/06/Prosecutorial-Dashboards-Newsletter-Issue-6-2023-02.pdf/">here.</a></p>
+        <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">Five new Judicial Districts join the project: the 3rd, 10th, 12th, 17th, and 21st. Read more <a className="text-lblue hover:underline" href="https://coloradolab.org/wp-content/uploads/2024/06/Prosecutorial-Dashboards-Newsletter-Issue-6-2023-02.pdf">here.</a></p>
         
     </li>
     <li className="mb-10 ms-4">

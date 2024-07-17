@@ -26,7 +26,7 @@ function Hero3(){
                       Explore data dashboards for each of the participating Judicial Districts by <span className='underline decoration-lblue decoration-2 underline-offset-2'>clicking on the map.</span> We hope that giving communities access to information about case referrals, outcomes, and performance indicators will lead to greater accountability and improve the fairness and effectiveness of the criminal justice system.
                       </p>
                     </div>
-                    <div className="flex flex-col gap-y-12 text-balance">
+                    <div className="flex flex-col 2xl:gap-y-12 gap-y-6 text-balance">
                       <div className="flex flex-col gap-4 lg:flex-row">
                         <div>
                           <span className="flex items-center justify-center bg-gray-100 rounded-full size-8">
@@ -87,10 +87,10 @@ function Hero3(){
 
 
     <div className='relative sm:block hidden '>
-      <div className="p-16">
+      <div className=" xl:mr-24 xl:ml-24 py-14">
+      <div className=" text-xl text-primary-500 font-bold ml-10">Colorado Judicial Districts</div>
+        <div className=" text-sm text-black mx-auto mt-2 ml-10 mb-4">Click a judicial district on the map to view a jurisdiction's dashboards and reports.</div>
     <iframe title="desktop-map"  aria-label="Map" id="datawrapper-chart-URTfs" src="https://datawrapper.dwcdn.net/URTfs/17/" scrolling="no" width="100%" height="700" data-external="1"></iframe>
-    <div className=" text-2xl text-primary-500 font-bold ml-10">Colorado Judicial Districts</div>
-        <div className=" text-md text-black mx-auto mt-2 ml-10">Click a judicial district on the map to view a jurisdiction's dashboards and reports.</div>
       </div>
       </div>
       <div className="mr-6 ml-6">

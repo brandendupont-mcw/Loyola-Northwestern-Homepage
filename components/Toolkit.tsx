@@ -41,7 +41,7 @@ The Colorado Prosecutorial Dashboards toolkit and Prosecutorial Performance Indi
                 <div>
                   <h3 className="font-medium text-primary-500">Prosecutorial Performance Indicators</h3>
                   <p className="mt-2 text-sm text-black">
-                  The project is rooted in a national model, the Prosecutorial Performance Indicators Project (PPI), which has a menu of 55 indicators to measure performance toward three goals: capacity & efficiency, community safety & well-being, and fairness & justice. To learn more, visit www.theppis.org <a className="text-lblue hover:underline" href="https://prosecutorialperformanceindicators.org">www.theppis.org</a>
+                  The project is rooted in a national model, the Prosecutorial Performance Indicators Project (PPI), which has a menu of 55 indicators to measure performance toward three goals: capacity & efficiency, community safety & well-being, and fairness & justice. To learn more, visit <a className="text-lblue hover:underline" href="https://prosecutorialperformanceindicators.org">www.theppis.org</a>
                   </p>
                 </div>
               </div>

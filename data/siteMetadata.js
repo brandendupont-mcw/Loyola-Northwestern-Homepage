@@ -6,8 +6,8 @@ const siteMetadata = {
   description: 'The Colorado Prosecutorial Dashboards project works with prosecutors offices across the state to increase data-driven decision-making, raise awareness of disparities and support offices in addressing disparities, and increase engagement with and accountability to the public.',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://data.dacolorado.org/',
+  siteRepo: 'https://data.dacolorado.org/',
   siteLogo: '/static/images/colorado-logo-branded.svg',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',

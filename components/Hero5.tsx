@@ -14,7 +14,7 @@ function Hero5(){
                         <span className="md:block"> in the United States</span>
                       </p>
                       <p className="max-w-2xl mt-4 text-base text-ywhite">
-                      Prosecutors are expected to take proactive, engaged responses to community problems, reduce disparities in justice outcomes, build greater trust through community engagement, and increase prosecutorial transparency and accountability. The Colorado Prosecutorial Dashboards project works with prosecutors offices across the state to increase data-driven decision-making, raise awareness of disparities and support offices in addressing disparities, and increase engagement with and accountability to the public. 
+                      Prosecutors are expected to take proactive, engaged responses to community problems, reduce disparities in justice outcomes, build greater trust through community engagement, and increase prosecutorial transparency and accountability. The Colorado Prosecutorial Dashboards project works with prosecutors offices across the state to increase data-driven decision-making, raise awareness of disparities and support offices in addressing disparities, and increase engagement with and accountability to the public. Collectively, the 18 JDs participating in the project represent 52 of Colorado’s 64 counties—and provide data for 85% of the state’s population.
 
 
 

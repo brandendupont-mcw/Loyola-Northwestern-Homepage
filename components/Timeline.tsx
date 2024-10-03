@@ -9,13 +9,18 @@ function Timeline(){
 <h1 className="text-4xl font-semibold tracking-tight text-primary-dark sm:text-4xl text-ywhite  ">
                 Key Dates in the Colorado Prosecutorial Dashboards project 
                 </h1>
-<ol className=" mx-auto max-w-2xl relative border-s border-ywhite bg-black dark:border-gray-700 mt-16 mb-16 ">                  
+<ol className=" mx-auto max-w-2xl relative border-s border-ywhite bg-black dark:border-gray-700 mt-16 mb-16 ">   
+<li className="mb-10 ms-4">
+        <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite "></div>
+        <time className="mb-1 text-sm font-normal  leading-none text-lblue  dark:text-gray-500">September, 2024</time>
+        <h3 className="text-lg font-semibold text-ywhite dark:text-white">3 Years In; Project Sustainability</h3>
+        <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The work of the first three years wraps up. Ongoing management of the dashboards is transitioned to the Colorado District Attorney’s Council.</p>
+    </li>               
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite "></div>
         <time className="mb-1 text-sm font-normal  leading-none text-lblue  dark:text-gray-500">July, 2024</time>
         <h3 className="text-lg font-semibold text-ywhite dark:text-white">4 Dashboards Released</h3>
-        <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The 9th, 11th, 19th, and 22nd Judicial District publicly release their data dashboards.</p>
-      
+        <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">The 9th, 11th, 19th, and 22nd Judicial District publicly release their data dashboards.Read more <a className="text-lblue hover:underline" href="https://mailchi.mp/3548f95d5988/prosecutorial-dashboards-newsletter-13897259"> here.</a></p>
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
@@ -30,6 +35,12 @@ function Timeline(){
         <h3 className="text-lg font-semibold text-ywhite">5 Jurisdictions Join</h3>
         <p className="mb-4 text-base font-normal text-ywhite dark:text-gray-400">Five new judicial districts join the project: the 9th, 11th, 13th, 19th, and 22nd. Read more <a className="text-lblue hover:underline" href="https://mailchi.mp/af660373c8d5/prosecutorial-dashboards-newsletter"> here.</a> </p>
       
+    </li>
+    <li className="mb-10 ms-4">
+        <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
+        <time className="mb-1 text-sm font-normal leading-none text-lblue dark:text-gray-500">October, 2023</time>
+        <h3 className="text-lg font-semibold text-ywhite dark:text-white">Equity Funding</h3>
+        <p className="text-base font-normal text-ywhite dark:text-gray-400">The project receives funding from the Edward Byrne Memorial Justice Assistance Grant (JAG) Program and the Bureau of Justice Assistance (BJA) Smart Proescution Grant Solicitation to develop a tool to advance racial equity in prosecutorial decision-making </p>
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
@@ -61,8 +72,8 @@ function Timeline(){
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>
         <time className="mb-1 text-sm font-normal leading-none text-lblue dark:text-gray-500">September, 2022</time>
-        <h3 className="text-lg font-semibold text-ywhite dark:text-white">7 Dashboards Released</h3>
-        <p className="text-base font-normal text-ywhite dark:text-gray-400">The 1st, 2nd, 6th, 7th, 8th, 18th, and 20th Judicial Districts publicly release their data dashboards. Read more in this story from <a className="text-lblue hover:underline" href="https://www.cpr.org/2022/09/08/colorado-district-attorney-prosecutions-data/?utm_medium=email&utm_source=lookout&utm_campaign=lookout20220909">CPR</a> and this story from the <a className="text-lblue hover:underline" href="https://nationalpost.com/pmn/news-pmn/colorado-das-unveil-data-dashboards-on-prosecutions">Associated Press.</a> </p>
+        <h3 className="text-lg font-semibold text-ywhite dark:text-white">8 Dashboards Released</h3>
+        <p className="text-base font-normal text-ywhite dark:text-gray-400">The 1st, 2nd, 5th, 6th, 7th, 8th, 18th, and 20th Judicial Districts publicly release their data dashboards. Read more in this story from <a className="text-lblue hover:underline" href="https://www.cpr.org/2022/09/08/colorado-district-attorney-prosecutions-data/?utm_medium=email&utm_source=lookout&utm_campaign=lookout20220909">CPR</a> and this story from the <a className="text-lblue hover:underline" href="https://nationalpost.com/pmn/news-pmn/colorado-das-unveil-data-dashboards-on-prosecutions">Associated Press.</a> </p>
     </li>
     <li className="mb-10 ms-4">
         <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border  border-ywhite dark:border-gray-900 dark:bg-gray-700"></div>

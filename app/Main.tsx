@@ -17,6 +17,7 @@ import Resources from '@/components/Resources'
 import LogoSection from '@/components/LogoSection'
 import Footer2 from '@/components/Footer2'
 import Map2 from '@/components/Map2'
+import Video from '@/components/Video'
 
 const MAX_DISPLAY = 5
 
@@ -35,6 +36,7 @@ export default function Home({ posts }) {
     </div>
     <Toolkit />
     <Timeline />
+    <Video />
     <LogoSection />
     <Footer2 />
     </>

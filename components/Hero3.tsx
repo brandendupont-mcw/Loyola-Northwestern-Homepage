@@ -23,7 +23,7 @@ function Hero3(){
                       18 Jurisdictions Committed to Data and Innovation in Prosecution.
                       </h1>
                       <p className="mt-4 text-base font-medium  text-black text-balance">
-                      Explore data dashboards for each of the participating Judicial Districts by <span className='underline decoration-lblue decoration-2 underline-offset-2'>clicking on the map.</span> We hope that giving communities access to information about case referrals, outcomes, and performance indicators will lead to greater accountability and improve the fairness and effectiveness of the criminal justice system.
+                      Explore data dashboards for each of the participating Judicial Districts by <span className='underline decoration-lblue decoration-2 underline-offset-2'>clicking on the map.</span>  We hope that giving communities access to information about case referrals, outcomes, and performance indicators will lead to greater accountability and improve the fairness and effectiveness of the criminal justice system.
                       </p>
                     </div>
                     <div className="flex flex-col 2xl:gap-y-12 gap-y-6 text-balance">

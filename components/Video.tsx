@@ -21,9 +21,9 @@ function Video(){
         </div>
       </div>
       <div className="bg-black inset-y-0 sm:right-0 sm:w-1/2 max-w-xl px-4 sm:mx-auto lg:pl-8 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-1/2 lg:max-w-full lg:absolute xl:px-0 sm:h-full sm:block hidden ">
-      <iframe className="sm:w-full sm:h-full w-full aspect-video bg-black sm:mt-0 mt-10 " src="https://www.youtube.com//embed/2WyTBMOdSE8?modestbranding=1" title="YouTube video player" frameBorder="0"controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
+      <iframe className="sm:w-full sm:h-full w-full aspect-video bg-black sm:mt-0 mt-10 " src="https://www.youtube.com//embed/2WyTBMOdSE8?modestbranding=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
       </div>
-      <iframe className="sm:w-full flex sm:h-full w-full h-[300px] bg-black sm:mt-0 mt-10 sm:hidden block " src="https://www.youtube.com//embed/2WyTBMOdSE8?modestbranding=1" title="YouTube video player" frameBorder="0"controls="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
+      <iframe className="sm:w-full flex sm:h-full w-full h-[300px] bg-black sm:mt-0 mt-10 sm:hidden block " src="https://www.youtube.com//embed/2WyTBMOdSE8?modestbranding=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen></iframe>
     </div>
 
 

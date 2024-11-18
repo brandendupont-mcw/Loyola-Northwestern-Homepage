@@ -24,7 +24,7 @@ const MAX_DISPLAY = 5
 export default function Home({ posts }) {
   return (
     <> 
-    <Hero5 />
+    <Map2 />
     <Hero3 />
     < DashboardList />
     <div className=' bg-black p-10'>
@@ -34,10 +34,6 @@ export default function Home({ posts }) {
     < CarouselSpacing />
     </div>
     </div>
-    <Toolkit />
-    <Timeline />
-    <Video />
-    <LogoSection />
     <Footer2 />
     </>
   )

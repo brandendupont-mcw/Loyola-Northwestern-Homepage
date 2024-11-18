@@ -10,7 +10,7 @@ function Hero5(){
                     <div className="max-w-3xl mx-auto">
        
                       <p className="mt-6 text-4xl font-bold tracking-tight text-ywhite md:text-6xl">
-                        The First <span className="text-yellow">Statewide Prosecutor Data Initiative</span> 
+                        The First <span className="text-white">Statewide Prosecutor Data Initiative</span> 
                         <span className="md:block"> in the United States</span>
                       </p>
                       <p className="max-w-2xl mt-4 text-base text-ywhite">

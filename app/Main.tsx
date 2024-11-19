@@ -27,14 +27,14 @@ export default function Home({ posts }) {
     <> 
     <Map2 />
     <HeroGrid/>
-    < DashboardList />
     <div className=' bg-black p-10'>
     <div className='mx-auto max-w-8xl pt-40 pb-40  '>
-    <div className='pb-4 max-w-md text-4xl text-ywhite  sm:ml-20 '>Analyses of Racial & Ethnic Disparities </div>
-    <p className='text-md pb-10 max-w-lg text-ywhite  sm:ml-20'>The fair and just treatment of all communities at each stage of the criminal justice process is of significant importance. In Spring 2023, we completed analyses of racial/ethnic disparities at points of prosecutorial discretion, including felony declination, case disposition, charge reduction, and sentencing. </p>
+    <div className='pb-4 max-w-md text-4xl text-ywhite  sm:ml-20 '>Digital Resources</div>
+    <p className='text-md pb-10 max-w-lg text-ywhite  sm:ml-20'>Below are a selected series of reports on topics related to gun violence and gun possession arrests, decarceration, media depection of gun violence, and community violence intervention. </p>
     < CarouselSpacing />
     </div>
     </div>
+    < DashboardList />
     <Footer2 />
     </>
   )

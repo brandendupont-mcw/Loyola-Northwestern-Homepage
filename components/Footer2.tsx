@@ -7,18 +7,13 @@ export function Footer2() {
 
          
         {
-            title: "Prosecutorial Performance Indicators",
-            href: "https://prosecutorialperformanceindicators.org/",
+            title: "Northwestern Corners",
+            href: "https://www.cornersresearch.org/",
           },
          {
           title: "Loyola Chicago Center for Criminal Justice",
           href: "https://loyolaccj.org/",
          },
-         {
-            title: "The Evaluation Center",
-            href: "https://www.the-evaluation-center.org/",
-          },
-
          
       ]
     
@@ -55,37 +50,13 @@ export function Footer2() {
             />
           </svg>
         </button></a>
-        <a href="https://prosecutorialperformanceindicators.org">
+        <a href="https://www.cornersresearch.org/">
           <button
           className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black  transition hover:bg-ywhite hover:text-primary-500  focus:outline-none focus:ring"
           type="button"
         >
           <span className="text-sm font-medium">
- PPIS </span>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-            />
-          </svg>
-        </button>
-        </a>
-        <a href="https://www.the-evaluation-center.org/">
-        <button
-          className="inline-flex items-center justify-center gap-1.5 rounded-lg border border-ywhite text-ywhite px-5 py-3 text-black transition hover:bg-ywhite hover:text-primary-500 focus:outline-none focus:ring"
-          type="button"
-        >
-          <span className="text-sm font-medium">
-           The Evaluation Center</span>
+ Northwestern Corners </span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +80,7 @@ export function Footer2() {
 
   </div>
   <div className="pt-8 mt-12 border-t border-white ">
-    <div className="text-white grid justify-center">Updated On: 7-17-2024</div>
+    <div className="text-white grid justify-center">Updated On: 11-20-2024</div>
     </div>
 
     

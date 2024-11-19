@@ -21,36 +21,24 @@ export default function CarouselSize() {
 
   const image_list = [
     
-    {src_link:"/static/images/jd1.png",
-    report_link:"https://data.dacolorado.org/1st-disparity-analysis/"
+    {src_link:"/static/images/communities4peace.png",
+    report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/65fb5e750303aea0e25c5f75_CORNERS_CP4P_3.20.2022.pdf"
 
     },
-    {src_link:"/static/images/jd2.png",
-    report_link:"https://data.dacolorado.org/2nd-disparity-analysis/"
+    {src_link:"/static/images/street_outreach.png",
+    report_link:"https://www.pnas.org/doi/10.1073/pnas.2300327120"
 
     },
-    {src_link:"/static/images/jd5.png",
-    report_link:"https://data.dacolorado.org/5th-disparity-analysis/"
+    {src_link:"/static/images/arrests-illegal-firearm.png",
+      report_link:"https://loyolaccj.org/firearmpossessionsentencinginillinois.pdf"
+  
+      },
+    {src_link:"/static/images/media-accountability.png",
+    report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/66166c3b9118d507a806b952_Media%20Accountability%20Project%20-%20Research%20Brief%20-%209%20April%202024.pdf"
 
     },
-    {src_link:"/static/images/jd6.png",
-    report_link:"https://data.dacolorado.org/6th-disparity-analysis/"
-
-    },
-    {src_link:"/static/images/jd7.png",
-    report_link:"https://data.dacolorado.org/7th-disparity-analysis/"
-
-    },
-    {src_link:"/static/images/jd8.png",
-    report_link:"https://data.dacolorado.org/8th-disparity-analysis/"
-
-    },
-    {src_link:"/static/images/jd18.png",
-    report_link:"https://data.dacolorado.org/18th-disparity-analysis/"
-
-    },
-    {src_link:"/static/images/jd20.png",
-    report_link:"https://data.dacolorado.org/20th-disparity-analysis/"
+    {src_link:"/static/images/decarceration-fellowship.png",
+    report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/6683003ffeffe2658d7eaaf7_CORNERS_Decarceration%20Fellowship%20Baseline%20Report.pdf"
 
     }
   ]
@@ -69,16 +57,16 @@ export default function CarouselSize() {
           <CarouselItem key={index} className="xl:basis-1/2 2xl:basis-1/3 ">
             <div className="p-1">
               <Card >
-                <CardContent className="flex  items-center justify-center p-[1px] ">
+                <CardContent className="flex   p-[1px] ">
                 <div className="">
       <img
       alt="a report"
-      className=""
+      className="max-h-52"
     src={e.src_link} />
     </div>
                 </CardContent>
               </Card>
-              <a href={e.report_link} className="flex flex-row gap-2 mt-2 text-ywhite hover:underline pl-2 hover:text-lblue">View Report 
+              <a href={e.report_link} className="flex flex-row gap-2 mt-2 text-ywhite hover:underline  hover:text-lblue">View Report 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#FFFBF1" className="size-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" /></svg>
 

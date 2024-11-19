@@ -1,3 +1,4 @@
+import DataWrapChart from "./Datawrap"
 
 function DashboardListItem( { title, link }) {
     return (
@@ -57,35 +58,16 @@ function DashboardList(){
             
         <div className=' pr-5 pl-5  mx-auto max-w-4xl  '>
         <div className='text-primary-500 font-bold text-5xl max-w-2xl mb-4 leading-tight mb-6 bg-lwhite  pt-4'>
-        <div className="p-1 text-primary-500 "> Explore Colorado Prosecutorial Dashboards </div>
+        <div className="p-1 text-primary-500 ">Advisory Board </div>
     
     </div>
     <p className="mt-2 text-primary-500 font-md  ml-1 ">
-    Data dashboards include information in eight areas: felony cases filed and declined; charging and filing; case resolution; diversion and deferrals; sentencing; defendant characteristics; victim characteristics and processes; staffing and caseloads.
+        Key community leaders, academics, and researchers guiding this initative.
+
     </p>
 
-        <ul className="text-xs ml-1 border-t-2 mt-4 border-primary-500">
-        <div className="grid sm:grid-cols-3 grid-cols-2 gap-10 text-xs pt-4  k ">
-            {
-               linkList.map((d) => (
     
-               
-                        <DashboardListItem
-                        key={d.title}
-                        title={d.title}
-                        link={d.link}
-                        />
-                        
-                
-    
-    
-                ))}
-                </div>
-    
-        </ul>
-    
-    
-    
+    <DataWrapChart title="" id="81KoJ" src="https://datawrapper.dwcdn.net/81KoJ/1/"   />
     
         </div>
         </div>

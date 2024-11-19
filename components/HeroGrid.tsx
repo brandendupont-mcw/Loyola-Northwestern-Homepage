@@ -52,7 +52,7 @@ function HeroGrid(){
 
     return(
 
-        <div className="max-w-[1300px] mx-auto mt-20">
+        <div className="max-w-[1300px] mx-auto mt-20 pl-2 pr-2">
 <div className="mt-4 text-xl font-mono ">View Weekly Trends in Reported Incidents of Violent and Gun Crime In Chicago  </div>
                     <div className=" mt-2 border-t-2 border-black border-2 mb-10"></div>
 

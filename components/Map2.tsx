@@ -52,13 +52,13 @@ function FirstMap() {
       layout: {},
       paint: {
           'fill-outline-color':'#fcb515',
-          'fill-color':'#FFE79B',
+          'fill-color':'#fcb515',
           'line-width': 2,
           'fill-opacity': [
               'case',
               ['boolean', ['feature-state', 'hover'], false],
               0,
-              0.6
+              0.8
           ]
       }
   }

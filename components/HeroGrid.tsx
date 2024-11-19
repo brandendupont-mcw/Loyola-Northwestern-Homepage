@@ -5,14 +5,12 @@ import * as React from "react";
 import DataWrapChart from "./Datawrap"
 import Link from "next/link"
 
-const Card = React.forwardRef(({ className, ...props }, ref) => (
-    <div
-      className={
-        ""
-      }
-      {...props}
-    />
-  ));
+const Card = ({children}) => (
+    <div>
+        {children}
+    </div>
+
+  );
 
 function HeroGrid(){
 
@@ -55,7 +53,7 @@ function HeroGrid(){
     return(
 
         <div className="max-w-[1300px] mx-auto mt-20">
-<div className="mt-4 text-xl font-mono ">View Weekly Trends in Reported Gun and Violent Crime Incidents </div>
+<div className="mt-4 text-xl font-mono ">View Weekly Trends in Reported Incidents of Violent and Gun Crime In Chicago  </div>
                     <div className=" mt-2 border-t-2 border-black border-2 mb-10"></div>
 
         <div className="grid sm:grid-cols-2 grid-cols-1 divide-x-2 mt-1 divide-black   ">

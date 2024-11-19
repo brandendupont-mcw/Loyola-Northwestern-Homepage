@@ -58,7 +58,7 @@ function FirstMap() {
               'case',
               ['boolean', ['feature-state', 'hover'], false],
               0,
-              0.5
+              0.6
           ]
       }
   }
@@ -106,7 +106,7 @@ function FirstMap() {
                       This project aims to break down
 silos of work in the violence prevention and criminal justice space, democratizing data and turning
 research into action by bringing together practitioners and researchers for a series of conversations
-about the most pressing issues in violence prevention and criminal justice today
+about the most pressing issues in violence prevention and criminal justice today.
                       </p>
                     </div>
                     <div className=" lg:order-second">

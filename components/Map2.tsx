@@ -16,16 +16,12 @@ function FirstMap() {
 
     const VIEW_STATE =  {
         longitude: -87.6298,
-        latitude: 41.8781,
-        zoom: 8,
+        latitude: 41.6781,
+        zoom: 7,
         bearing: 0,
-        pitch: 20,
       }
     
 
-    
-    const LAT = 39.327800750504494
-    const LONG = -105.45304562833229
 
     
     const INITIAL_VIEW_STATE  = VIEW_STATE
@@ -55,11 +51,13 @@ function FirstMap() {
       source: 'states',
       layout: {},
       paint: {
-          'fill-color': '#20c997',
+          'fill-outline-color':'#fcb515',
+          'fill-color':'#FFE79B',
+          'line-width': 2,
           'fill-opacity': [
               'case',
               ['boolean', ['feature-state', 'hover'], false],
-              1,
+              0,
               0.5
           ]
       }
@@ -71,10 +69,10 @@ function FirstMap() {
 
     const handleLoad = () => {
       console.log('Map has fully loaded!');
-      mapRef.current.flyTo({ center: [-87.6298, 41.8781],
-        zoom: 10, 
+      mapRef.current.flyTo({ center: [-87.6298, 41.8081],
+        zoom: 9, 
         essential: true,
-        speed: .5, // Make the flying speed faster (default is 1.2) curve:
+        speed: .3 // Make the flying speed faster (default is 1.2) curve:
        });
     };
 
@@ -94,66 +92,59 @@ function FirstMap() {
 
 
     return (
-        <div className=' '>
-        <div className=' overflow-hidden'>
-
-
-
-        < Map     
-            reuseMaps
-            initialViewState={INITIAL_VIEW_STATE}
-            mapStyle={"mapbox://styles/branden-dupont/ckrdujoeu12kq17moqndnsnzj"}
-            mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5b2pscW1kMGgwZjJpcHdtMDhhZjg3ZyJ9.jv_6ksQROEiuvXdl6dwoGw'}
-            ref={mapRef}
-            style={{width:"100%", height:800}}
-            onLoad={handleLoad}
-            scrollZoom={false}
-            boxZoom={false}
-            dragRotate={false}
-            dragPan={false}
-            touchZoomRotate={false}
-            scrollZoom={false}  
- 
-            
-            >
-                                    <Source type="geojson" data={allData}>
-          <Layer {...dataLayer} />
-        </Source>
-
-<section className="relative flex items-right justify-center overflow-hidden  ">
-                <div className=" px-5 py-12 mx-auto max-w-7xl lg:px-16 lg:py-16 md:px-12 ">
-                  <div className="">
-                    <div className="max-w-3xl  bg-primary-500 ">
-       
-                      <p className="mt-6 text-4xl font-bold tracking-tight text-ywhite md:text-4xl">
-                      Bringing researchers together with key community
-                      stakeholders in the city reduce crime and violence<span className="text-white"></span> 
-                        <span className="md:block"> </span>
+        <div className=''>
+        
+<section className='bg-black'>
+                <div className=" lg:pl-32 ">
+                  <div className="grid items-center grid-cols-1 gap-4 list-none lg:grid-cols-2 lg:gap-24">
+                    <div>
+                      <p className="text-2xl font-semibold   text-white lg:text-4xl text-balance">
+                      Bringing researchers together with key community stakeholders in the city to                       
+                      <span className="text-yellow"> reduce crime and violence</span> 
                       </p>
-                      <p className="max-w-2xl mt-4 text-base text-ywhite">
+                      <p className="mt-4 text-base font-medium text-gray-100">
                       This project aims to break down
 silos of work in the violence prevention and criminal justice space, democratizing data and turning
 research into action by bringing together practitioners and researchers for a series of conversations
 about the most pressing issues in violence prevention and criminal justice today
-
-
-
                       </p>
+                    </div>
+                    <div className=" lg:order-second">
+                    <div className=' overflow-hidden'>
+
+
+
+< Map     
+    reuseMaps
+    initialViewState={INITIAL_VIEW_STATE}
+    mapStyle={"mapbox://styles/branden-dupont/ckrdujoeu12kq17moqndnsnzj"}
+    mapboxAccessToken={'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5b2pscW1kMGgwZjJpcHdtMDhhZjg3ZyJ9.jv_6ksQROEiuvXdl6dwoGw'}
+    ref={mapRef}
+    style={{width:"100%", height:"60vh"}}
+    onLoad={handleLoad}
+    scrollZoom={false}
+    boxZoom={false}
+    dragRotate={false}
+    dragPan={false}
+    touchZoomRotate={false}
+    scrollZoom={false}  
+
+    
+    >
+                            <Source type="geojson" data={allData}>
+  <Layer {...dataLayer} />
+</Source>
+
+
+       </Map >
+
+
+
+</div>
                     </div>
                   </div>
                 </div>
               </section>
-               </Map >
-
-                <div className='flex justify-end p-6'>
-
-                
-               
-
-                </div>
-  
-        
-      </div>
       </div>
     );
   }

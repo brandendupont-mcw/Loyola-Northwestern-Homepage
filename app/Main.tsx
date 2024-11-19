@@ -16,6 +16,7 @@ import Toolkit from "@/components/Toolkit"
 import Resources from '@/components/Resources'
 import LogoSection from '@/components/LogoSection'
 import Footer2 from '@/components/Footer2'
+import HeroGrid from "@/components/HeroGrid"
 import Map2 from '@/components/Map2'
 import Video from '@/components/Video'
 
@@ -25,6 +26,7 @@ export default function Home({ posts }) {
   return (
     <> 
     <Map2 />
+    <HeroGrid/>
     < DashboardList />
     <div className=' bg-black p-10'>
     <div className='mx-auto max-w-8xl pt-40 pb-40  '>

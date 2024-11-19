@@ -95,7 +95,7 @@ function FirstMap() {
         <div className=''>
         
 <section className='bg-black'>
-                <div className=" lg:pl-32 ">
+                <div className=" 2xl:pl-32 lg:pl-10 ">
                   <div className="grid items-center grid-cols-1 gap-4 list-none lg:grid-cols-2 lg:gap-24">
                     <div>
                       <p className="text-2xl font-semibold   text-white lg:text-4xl text-balance">

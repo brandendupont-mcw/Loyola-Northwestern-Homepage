@@ -20,27 +20,34 @@ export default function CarouselSize() {
   ]
 
   const image_list = [
-    
+    {src_link:"/static/images/duke-firearm-olson.png",
+      report_link:"https://firearmslaw.duke.edu/wp-content/uploads/2022/01/Olson-Illegal-Firearm-Possession.pdf"
+      }, 
     {src_link:"/static/images/communities4peace.png",
     report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/65fb5e750303aea0e25c5f75_CORNERS_CP4P_3.20.2022.pdf"
 
     },
     {src_link:"/static/images/street_outreach.png",
-    report_link:"https://www.pnas.org/doi/10.1073/pnas.2300327120"
-
-    },
-    {src_link:"/static/images/arrests-illegal-firearm.png",
-      report_link:"https://loyolaccj.org/firearmpossessionsentencinginillinois.pdf"
-  
+      report_link:"https://www.pnas.org/doi/10.1073/pnas.2300327120"
       },
+      {src_link:"/static/images/sentences-to-prison.png",
+        report_link:"https://loyolaccj.org/blog/sentences-to-prison-in-illinois-for-illegal-possession-of-a-firearm"
+        },
     {src_link:"/static/images/media-accountability.png",
     report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/66166c3b9118d507a806b952_Media%20Accountability%20Project%20-%20Research%20Brief%20-%209%20April%202024.pdf"
 
     },
+    {src_link:"/static/images/sentences-imposed-firearm.png",
+      report_link:"https://loyolaccj.org/firearmpossessionsentencinginillinois.pdf"
+      },
     {src_link:"/static/images/decarceration-fellowship.png",
     report_link:"https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/6683003ffeffe2658d7eaaf7_CORNERS_Decarceration%20Fellowship%20Baseline%20Report.pdf"
 
-    }
+    },        {src_link:"/static/images/arrests-illegal-firearm.png",
+      report_link:"https://loyolaccj.org/firearmpossessionsentencinginillinois.pdf"
+  
+      },
+
   ]
   return (
     <div className=" ">

@@ -1,14 +1,14 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Colorado Prosecutor Dashboards Project',
-  author: 'Colorado Prosecutor Dashboards Project',
-  headerTitle: 'Colorado Prosecutor Dashboards Project',
-  description: 'The Colorado Prosecutorial Dashboards project works with prosecutors offices across the state to increase data-driven decision-making, raise awareness of disparities and support offices in addressing disparities, and increase engagement with and accountability to the public.',
+  title: 'Advancing Neighborhood Well-being and Safety - Loyola CCJ and Northwestern Corners',
+  author: 'Advancing Neighborhood Well-being and Safety - Loyola CCJ and Northwestern Corners',
+  headerTitle: 'Advancing Neighborhood Well-being and Safety',
+  description: "Loyola Chicago's Center For Criminal Justice and Northwestern Corners are bringing researchers together with key community stakeholders in the city to reduce crime and violence.",
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://data.dacolorado.org/',
-  siteRepo: 'https://data.dacolorado.org/',
-  siteLogo: '/static/images/colorado-logo-branded.svg',
+  siteUrl: 'https://loyola-ccj-northwestern-corners.loyolaccj.org/',
+  siteRepo: 'https://loyola-ccj-northwestern-corners.loyolaccj.org/',
+  siteLogo: '/static/images/favicon.svg',
   socialBanner: '/static/images/twitter-card.png',
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'address@yoursite.com',

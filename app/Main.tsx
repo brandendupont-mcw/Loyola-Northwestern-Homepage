@@ -35,6 +35,7 @@ export default function Home({ posts }) {
     </div>
     </div>
     < DashboardList />
+    <LogoSection/>
     <Footer2 />
     </>
   )

@@ -2,8 +2,9 @@
 "use client";
 
 import React from 'react';
+import { useEffect, useState } from 'react';
 import DeckGL from '@deck.gl/react';
-import { LineLayer } from '@deck.gl/layers';
+import { LineLayer, GeoJsonLayer } from '@deck.gl/layers';
 import { Map } from 'react-map-gl';
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5b2pscW1kMGgwZjJpcHdtMDhhZjg3ZyJ9.jv_6ksQROEiuvXdl6dwoGw'; // Replace this!
@@ -43,16 +44,8 @@ const layers = [
   }),
 ];
 
-const layer2 = new LineLayer({
-    id: 'LineLayer',
-    data: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/bart-segments.json',
-    
-    getColor: d => [Math.sqrt(d.inbound + d.outbound), 140, 0],
-    getSourcePosition: d => d.from.coordinates,
-    getTargetPosition: d => d.to.coordinates,
-    getWidth: 12,
-    pickable: true
-  });
+
+
 
 const MapWithDeck = () => (
   <DeckGL
@@ -72,11 +65,40 @@ const MapWithDeck = () => (
   </DeckGL>
 );
 
-const MapWithDeck2 = () => (
+const MapWithDeck2 = () => {
+
+    const DATA_URL =
+    'https://raw.githubusercontent.com/brandendupont-mcw/Loyola-Northwestern-Homepage/refs/heads/main/public/static/data/gun_possession_arrest.geojson';
+
+    const [geoData, setGeoData] = useState(null);
+
+    useEffect(() => {
+      fetch(DATA_URL)
+        .then(res => res.json())
+        .then(data => setGeoData(data));
+        console.log('Loaded GeoJSON:', data); // 👈 DEBUG
+    }, []);
+
+    const layers2 = [
+        new GeoJsonLayer({
+            id: 'gun-possession-line',
+            data: geoData,
+            stroked: true,
+            filled: false,
+            lineWidthScale: 2,
+            lineWidthMinPixels: 2,
+            getLineColor: [0, 122, 255],
+            getLineWidth: 2,
+            pickable: true,
+        }),
+      ];
+
+    return(
+
     <DeckGL
       initialViewState={INITIAL_VIEW_STATE}
       controller={true}
-      layers={layer2}
+      layers={layers2}
       getTooltip={({ object }) =>
         object ? { text: object.label, style: { fontSize: '14px' } } : null
       }
@@ -88,7 +110,8 @@ const MapWithDeck2 = () => (
         reuseMaps
       />
     </DeckGL>
-  );
+    )
+};
 
 export default function App() {
   return (

@@ -16,7 +16,7 @@ import Toolkit from "@/components/Toolkit"
 import Resources from '@/components/Resources'
 import LogoSection from '@/components/LogoSection'
 import Footer2 from '@/components/Footer2'
-import HeroGrid from "@/components/HeroGrid"
+import DataHeroPage from '@/components/DataHeroPage'
 import OverallArrestSection from "@/components/OverallArrestSection"
 import ChicagoArrestRate from "@/components/ChicagoArrestRate"
 import NeighborhoodStreetSegment from "@/components/NeighborhoodStreetSegment"
@@ -28,6 +28,7 @@ const MAX_DISPLAY = 5
 export default function Home() {
   return (
     <> 
+    <DataHeroPage />
     <ChicagoArrestRate />
     <OverallArrestSection/>
     <NeighborhoodStreetSegment />

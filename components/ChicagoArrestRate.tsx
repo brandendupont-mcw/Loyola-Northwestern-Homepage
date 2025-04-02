@@ -22,7 +22,7 @@ function OverallArrestSection(){
         <div className=" h-full p-10  ">
                 <div className="p-4 ml-10  ">
                     <div className="text-3xl font-semibold  max-w-xl mt-4" >
-                       Violence & Impunity in Chicago
+                       Unsolved Violence in Chicago
                     </div>
                     <div className="mt-6 text-lg max-w-xl">
                         Nationally, Chicago has one of the lowest arrest rates for violent crimes among the largest 50 US cities. Police make few arrests in neighborhoods with high homicides, shootings, and violent crime. A 2025 <a className="underline hover:text-lblue" href="https://www.wbez.org/chicago/2017/01/26/chicagos-murder-clearance-rate-falls-to-historic-low"> Chicago Sun Times</a> report found an arrest is made in only <span className="pl-1 pr-1 max-w-sm bg-primary-500 text-white">6%</span> of shootings citywide. Neighborhoods of color with high amounts of violent crime have even lower arrest rates for <a className="underline hover:text-lblue" href="https://www.wbez.org/chicago/2017/01/26/chicagos-murder-clearance-rate-falls-to-historic-low"> shootings</a> and <a className="underline hover:text-lblue" href="https://www.wbez.org/chicago/2017/01/26/chicagos-murder-clearance-rate-falls-to-historic-low"> homicides</a> compared to the citywide average.

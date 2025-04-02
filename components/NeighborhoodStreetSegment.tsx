@@ -275,6 +275,7 @@ export default function App() {
                         <div className="p-4 ml-10  ">
                     <div className="text-3xl font-semibold  max-w-xl mt-4" >
                        Crime and Arrests in        <span className=" text-3xl font-mono  border-black border-b-4 ">Austin, Chicago </span>
+                       
                     </div>
                     
                     <div className="mt-6 text-lg max-w-xl">
@@ -288,8 +289,21 @@ export default function App() {
 
 
         <div className="grid grid-cols-1 md:grid-cols-2  mx-auto max-w-[1400px] ">
-            <div className='pl-4'>Violent Arrests by Street Segment</div>
-            <div className='pl-10'>Gun Arrests by Street Segment</div>
+            <div className='pl-4'>Violent Arrests by Street Segment <br></br> <span className="pl-1 pr-1 max-w-sm bg-black text-white">8,537</span> violent incidents<br></br>
+            <span className="pl-1 pr-1 max-w-sm bg-black text-yellow">1,135</span> violent arrests
+            <br></br>
+            <span className="pl-1 pr-1 max-w-sm bg-black text-yellow">13.3%</span> violent arrest rate
+
+            </div>
+            
+            <div className='pl-10'>Gun Arrests by Street Segment
+                <br></br>
+
+            
+            <span className="pl-1 pr-1 max-w-sm bg-black text-yellow">2,365</span> gun possession arrests
+
+        
+            </div>
             
         </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 p-4 h-screen mx-auto max-w-[1400px] ">

@@ -77,7 +77,7 @@ const MapWithDeck = () => {
               width: window.innerWidth,
               height: window.innerHeight,
             });
-            console.log(viewport)
+
       
             const { longitude, latitude, zoom } = viewport.fitBounds(
               [
@@ -94,8 +94,9 @@ const MapWithDeck = () => {
 
       
     const colorScale = scaleLinear()
-    .domain([0, 5]) // Adjust based on your data range
-    .range([[200, 230, 255], [255, 0, 0]]); // light blue → red
+    .domain([0,1,3]) // Adjust based on your data range
+    .range([[240, 240, 240], [166, 206, 227], [31, 120, 180], [8, 48, 107]]); // light blue → red
+
 
     const layers = [
         new GeoJsonLayer({
@@ -103,10 +104,9 @@ const MapWithDeck = () => {
             data: geoData,
             stroked: true,
             filled: false,
-            getLineColor: f => colorScale(f.properties?.gun_possession_arrest || 0),
+            getLineColor: f => colorScale(f.properties?.violent_gun_arrest || 0),
             lineWidthScale: 2,
             lineWidthMinPixels: 2,
-            getLineColor: [0, 122, 255],
             getLineWidth: 2,
             pickable: true,
         }),
@@ -114,6 +114,7 @@ const MapWithDeck = () => {
 
     return(
 
+    <>
     <DeckGL
       viewState={viewState}
       onViewStateChange={({ viewState }) => setViewState(viewState)}
@@ -126,15 +127,37 @@ const MapWithDeck = () => {
     >
       <Map
         mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
-        mapStyle="mapbox://styles/branden-dupont/ckt0h6w5800vb18qq9lniiuoc"
+        mapStyle="mapbox://styles/mapbox/light-v10"
         reuseMaps
       />
     </DeckGL>
+    <div className="absolute bottom-4 right-4 bg-white bg-opacity-90 shadow rounded p-3 text-sm z-10 w-56">
+  <h4 className="font-semibold mb-2">Violent Possession Arrests</h4>
+  <ul className="space-y-1">
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-gray-300"></span>
+      None
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-200"></span>
+      1
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-500"></span>
+      2–3
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-900"></span>
+      4+
+    </li>
+  </ul>
+</div>
+    </>
     )
 };
 const MapWithDeck2 = () => {
 
-    const DATA_URL =
+    const NEW_DATA_URL =
     'https://raw.githubusercontent.com/brandendupont-mcw/Loyola-Northwestern-Homepage/refs/heads/main/public/gun_possession_arrest.geojson';
 
     const INITIAL_VIEW_STATE = {
@@ -145,13 +168,15 @@ const MapWithDeck2 = () => {
         bearing: 0,
       };
 
-    const [geoData, setGeoData] = useState(null);
+    const [geoData2, setGeoData2] = useState(null);
     const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
 
     useEffect(() => {
-        fetch(DATA_URL)
+        fetch(NEW_DATA_URL)
           .then(res => res.json())
           .then(data => {
+
+            setGeoData2(data);
 
             const bounds = bbox(data); // [minX, minY, maxX, maxY]
 
@@ -159,7 +184,7 @@ const MapWithDeck2 = () => {
               width: window.innerWidth,
               height: window.innerHeight,
             });
-            console.log(viewport)
+          
       
             const { longitude, latitude, zoom } = viewport.fitBounds(
               [
@@ -169,20 +194,31 @@ const MapWithDeck2 = () => {
               { padding: 10 }
             );
     
-            setGeoData(data);
+            
             setViewState({ longitude, latitude, zoom: Math.max(zoom - 1, 2), bearing: 0, pitch: 0 });
+
+            //console.log(data.features[0].properties); 
           });
       }, []);
+
+      const colorScale = scaleLinear()
+      .domain([0,1,3]) // Adjust based on your data range
+      .range([	[240, 240, 240], [166, 206, 227], [31, 120, 180], [8, 48, 107]]);
 
     const layers = [
         new GeoJsonLayer({
             id: 'gun-possession-line',
-            data: geoData,
+            data: geoData2,
+            getLineColor: f => {
+                const count = f.properties?.gun_possession_arrest || 0;
+                const color = colorScale(count);
+                console.log(count, color); // 👀 see if it's working
+                return color;
+              },
             stroked: true,
             filled: false,
             lineWidthScale: 2,
             lineWidthMinPixels: 2,
-            getLineColor: [0, 122, 255],
             getLineWidth: 2,
             pickable: true,
         }),
@@ -202,18 +238,32 @@ const MapWithDeck2 = () => {
     >
       <Map
         mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
-        mapStyle="mapbox://styles/branden-dupont/ckt0h6w5800vb18qq9lniiuoc" 
+        mapStyle="mapbox://styles/mapbox/light-v10" 
         reuseMaps
       />
     </DeckGL>
-    <div className="absolute bottom-4 left-4 bg-white bg-opacity-90 shadow  p-3 text-sm z-10 w-48">
+    <div className="absolute bottom-4 right-4 bg-white bg-opacity-90 shadow rounded p-3 text-sm z-10 w-56">
   <h4 className="font-semibold mb-2">Gun Possession Arrests</h4>
-  <div className="h-3 w-full bg-gradient-to-r to-blue-200 from-red-600 rounded"></div>
-  <div className="flex justify-between text-xs text-gray-600 mt-1">
-    <span>0</span>
-    <span>50+</span>
-  </div>
+  <ul className="space-y-1">
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-gray-300"></span>
+      None
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-200"></span>
+      1
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-500"></span>
+      2–3
+    </li>
+    <li className="flex items-center gap-2">
+      <span className="w-4 h-3 inline-block rounded-sm bg-blue-900"></span>
+      4+
+    </li>
+  </ul>
 </div>
+
     </>
     )
 };
@@ -228,7 +278,7 @@ export default function App() {
                     </div>
                     
                     <div className="mt-6 text-lg max-w-xl">
-                    In Chicago's most violent neighborhoods, the Chicago police makes more gun possession arrests than arrests for violent crime. Select Chicago neighborhoods to view more.
+                    In Chicago's most violent neighborhoods, the Chicago police department makes more gun possession arrests than arrests for violent crime. Select Chicago neighborhoods to view more.
                     </div>
                     </div>
 

@@ -31,7 +31,7 @@ function DataHeroPage() {
                       <span className="text-yellow"> Arrests for Violence and Gun Possession</span> 
                       </p>
                       <p className="mt-4 text-base font-medium text-gray-100">
-                        We're tracking the level of arrests for violent crimes including homicide, robbery, aggravated assault, 
+                        We're tracking the level of arrests for violent crimes including homicide, robbery, aggravated assault and gun possession.
                       </p>
                     </div>
                     <div className=" lg:order-second">

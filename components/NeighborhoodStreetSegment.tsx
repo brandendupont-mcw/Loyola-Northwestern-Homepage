@@ -103,10 +103,10 @@ export default function App() {
             
         </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-20 p-4 h-screen mx-auto max-w-[1400px] ">
-      <div className="h-full h-[500px] rounded overflow-hidden shadow relative">
+      <div className=" h-[500px] rounded overflow-hidden shadow relative">
         <MapWithDeck />
       </div>
-      <div className="h-full h-[500px] rounded overflow-hidden shadow relative">
+      <div className=" h-[500px] rounded overflow-hidden shadow relative">
         <MapWithDeck2 />
       </div>
     </div>

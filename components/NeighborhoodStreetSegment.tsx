@@ -6,6 +6,8 @@ import { useEffect, useState } from 'react';
 import DeckGL from '@deck.gl/react';
 import { LineLayer, GeoJsonLayer } from '@deck.gl/layers';
 import { Map } from 'react-map-gl';
+import { WebMercatorViewport } from '@deck.gl/core';
+import { bbox } from "@turf/bbox";
 
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoiYnJhbmRlbi1kdXBvbnQiLCJhIjoiY2x5b2pscW1kMGgwZjJpcHdtMDhhZjg3ZyJ9.jv_6ksQROEiuvXdl6dwoGw'; // Replace this!
 
@@ -47,39 +49,49 @@ const layers = [
 
 
 
-const MapWithDeck = () => (
-  <DeckGL
-    initialViewState={INITIAL_VIEW_STATE}
-    controller={true}
-    layers={layers}
-    getTooltip={({ object }) =>
-      object ? { text: object.label, style: { fontSize: '14px' } } : null
-    }
-    style={{ width: '100%', height: '100%' }}
-  >
-    <Map
-      mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
-      mapStyle="mapbox://styles/branden-dupont/ckrdujoeu12kq17moqndnsnzj"
-      reuseMaps
-    />
-  </DeckGL>
-);
-
-const MapWithDeck2 = () => {
+const MapWithDeck = () => {
 
     const DATA_URL =
-    'https://raw.githubusercontent.com/brandendupont-mcw/Loyola-Northwestern-Homepage/refs/heads/main/public/static/data/gun_possession_arrest.geojson';
+    'https://raw.githubusercontent.com/brandendupont-mcw/Loyola-Northwestern-Homepage/refs/heads/main/public/gun_possession_arrest.geojson';
+
+    const INITIAL_VIEW_STATE = {
+        longitude: -87.6298,
+        latitude: 41.8781,
+        zoom: 10,
+        pitch: 0,
+        bearing: 0,
+      };
 
     const [geoData, setGeoData] = useState(null);
+    const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
 
     useEffect(() => {
-      fetch(DATA_URL)
-        .then(res => res.json())
-        .then(data => setGeoData(data));
-        console.log('Loaded GeoJSON:', data); // 👈 DEBUG
-    }, []);
+        fetch(DATA_URL)
+          .then(res => res.json())
+          .then(data => {
 
-    const layers2 = [
+            const bounds = bbox(data); // [minX, minY, maxX, maxY]
+
+            const viewport = new WebMercatorViewport({
+              width: window.innerWidth,
+              height: window.innerHeight,
+            });
+            console.log(viewport)
+      
+            const { longitude, latitude, zoom } = viewport.fitBounds(
+              [
+                [bounds[0], bounds[1]],
+                [bounds[2], bounds[3]],
+              ],
+              { padding: 40 }
+            );
+    
+            setGeoData(data);
+            setViewState({ longitude, latitude, zoom: Math.max(zoom - 1, 2), bearing: 0, pitch: 0 });
+          });
+      }, []);
+
+    const layers = [
         new GeoJsonLayer({
             id: 'gun-possession-line',
             data: geoData,
@@ -96,9 +108,86 @@ const MapWithDeck2 = () => {
     return(
 
     <DeckGL
-      initialViewState={INITIAL_VIEW_STATE}
+      viewState={viewState}
+      onViewStateChange={({ viewState }) => setViewState(viewState)}
       controller={true}
-      layers={layers2}
+      layers={layers}
+      getTooltip={({ object }) =>
+        object ? { text: object.label, style: { fontSize: '14px' } } : null
+      }
+      style={{ width: '100%', height: '100%' }}
+    >
+      <Map
+        mapboxAccessToken={MAPBOX_ACCESS_TOKEN}
+        mapStyle="mapbox://styles/branden-dupont/ckrdujoeu12kq17moqndnsnzj"
+        reuseMaps
+      />
+    </DeckGL>
+    )
+};
+const MapWithDeck2 = () => {
+
+    const DATA_URL =
+    'https://raw.githubusercontent.com/brandendupont-mcw/Loyola-Northwestern-Homepage/refs/heads/main/public/gun_possession_arrest.geojson';
+
+    const INITIAL_VIEW_STATE = {
+        longitude: -87.6298,
+        latitude: 41.8781,
+        zoom: 10,
+        pitch: 0,
+        bearing: 0,
+      };
+
+    const [geoData, setGeoData] = useState(null);
+    const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
+
+    useEffect(() => {
+        fetch(DATA_URL)
+          .then(res => res.json())
+          .then(data => {
+
+            const bounds = bbox(data); // [minX, minY, maxX, maxY]
+
+            const viewport = new WebMercatorViewport({
+              width: window.innerWidth,
+              height: window.innerHeight,
+            });
+            console.log(viewport)
+      
+            const { longitude, latitude, zoom } = viewport.fitBounds(
+              [
+                [bounds[0], bounds[1]],
+                [bounds[2], bounds[3]],
+              ],
+              { padding: 10 }
+            );
+    
+            setGeoData(data);
+            setViewState({ longitude, latitude, zoom: Math.max(zoom - 1, 2), bearing: 0, pitch: 0 });
+          });
+      }, []);
+
+    const layers = [
+        new GeoJsonLayer({
+            id: 'gun-possession-line',
+            data: geoData,
+            stroked: true,
+            filled: false,
+            lineWidthScale: 2,
+            lineWidthMinPixels: 2,
+            getLineColor: [0, 122, 255],
+            getLineWidth: 2,
+            pickable: true,
+        }),
+      ];
+
+    return(
+
+    <DeckGL
+      viewState={viewState}
+      onViewStateChange={({ viewState }) => setViewState(viewState)}
+      controller={true}
+      layers={layers}
       getTooltip={({ object }) =>
         object ? { text: object.label, style: { fontSize: '14px' } } : null
       }

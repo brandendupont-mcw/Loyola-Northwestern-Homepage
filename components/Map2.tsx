@@ -98,15 +98,11 @@ function FirstMap() {
                 <div className=" 2xl:pl-32 lg:pl-10 ">
                   <div className="grid items-center grid-cols-1 gap-4 list-none lg:grid-cols-2 lg:gap-24">
                     <div>
-                      <p className="text-2xl font-semibold   text-white lg:text-4xl text-balance">
-                      Bringing researchers together with community stakeholders in the city to                       
-                      <span className="text-yellow"> reduce crime and violence</span> 
+                      <p className="text-2xl font-semibold text-white lg:text-4xl text-balance">
+                      Bringing researchers together with community stakeholders in Chicago to   <span className="text-yellow"> reduce crime and violence</span> 
                       </p>
                       <p className="mt-4 text-base font-medium text-gray-100">
-                      This project aims to break down
-silos of work in the violence prevention and criminal justice space, democratizing data and turning
-research into action by bringing together practitioners and researchers for a series of conversations
-about the most pressing issues in violence prevention and criminal justice today.
+                      This project aims to break down silos of work in the violence prevention and criminal justice space, democratizing data and turning research into action by bringing together practitioners and researchers for a series of conversations about the most pressing issues in violence prevention and criminal justice today.
                       </p>
                     </div>
                     <div className=" lg:order-second">

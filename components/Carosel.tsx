@@ -13,7 +13,6 @@ export default function CarouselSize() {
 
   const data = [
     "https://datawrapper.dwcdn.net/TMIL7/2/",  
-
     'https://datawrapper.dwcdn.net/r5Ywe/1/',  
     'https://datawrapper.dwcdn.net/Jw7eU/1/',  
     'https://datawrapper.dwcdn.net/fNzsA/1/',

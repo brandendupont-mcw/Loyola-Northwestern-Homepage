@@ -7,20 +7,22 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/stemen_don.png',
-    href: '/components/data/authors/stemen_don',
+    title: 'Illegal Firearm Possession',
+    description: `A reflection on policies and practices that may miss the mark and exacerbate racial disparity in the justice system. David E. Olson. Duke Center for Firearms Law.`,
+    imgSrc: '/static/images/duke-firearm-olson.png',
+    href: "/components/data/authors/stemen_donhttps://firearmslaw.duke.edu/wp-content/uploads/2022/01/Olson-Illegal-Firearm-Possession.pdf",
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/olson_dave.png',
-    href: 'https://www.google.com',
+    title: 'Communities Partnering for Peace',
+    description: 'Gun violence—a key driver of premature death and racial disparities in life expectancy in the US—remains especially damaging to Chicagoans, who face consistently higher per capita rates of gun violence than residents of other large US cities. Corners.',
+    imgSrc: "/static/images/communities4peace.png",
+    href: "https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/65fb5e750303aea0e25c5f75_CORNERS_CP4P_3.20.2022.pdf",
+  },
+{
+    title: 'Evaluating the impact of a street outreach intervention on participant involvement in gun violence',
+    description: 'Community violence interventions (CVIs) are promising approaches to reducing community violence, but little research has examined their effectiveness for mitigating individual-level violence. This quasiexperimental study provides evidence for the impact of CVIs on participant involvement in gun violence across three treatment levels. Ross, Ochoa, and Papachristos. Proceedings of the National Academies of Science',
+    imgSrc: "/static/images/street_outreach.png",
+    href: "https://www.pnas.org/doi/10.1073/pnas.2300327120",
   },
 ]
 

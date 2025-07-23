@@ -16,6 +16,9 @@ import AuthorLayout from '@/layouts/AuthorLayout';
 export const metadata = genPageMetadata({ title: 'Researchers' });
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 export default function Page() {

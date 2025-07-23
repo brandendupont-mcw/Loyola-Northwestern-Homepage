@@ -17,7 +17,7 @@ export default function Page() {
             Researchers
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 pl-9">
-            Below is a list of researchers and organization engaged in research about violence in Chicago. 
+            Below is a list of researchers and organizations engaged in research about violence in Chicago. 
           </p>
         </div>
     {authors.map((author) => {

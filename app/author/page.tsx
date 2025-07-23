@@ -9,7 +9,7 @@ export const metadata = genPageMetadata({ title: 'About' });
 export default function Page() {
   const authors = allAuthors as Authors[]; // or filter if needed
   //const mainContent = coreContent(author);
-
+  
   return (
   <>
   <div className="space-y-2 pb-8 pt-6 md:space-y-5">

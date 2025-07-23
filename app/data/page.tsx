@@ -20,6 +20,8 @@ import DataHeroPage from '@/components/DataHeroPage'
 import OverallArrestSection from "@/components/OverallArrestSection"
 import ChicagoArrestRate from "@/components/ChicagoArrestRate"
 import NeighborhoodStreetSegment from "@/components/NeighborhoodStreetSegment"
+import ScrollChartInteraction from "@/components/testvizxscroll"
+import PackClusterChart from "@/components/circlepack"
 import Map2 from '@/components/Map2'
 import Video from '@/components/Video'
 

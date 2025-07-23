@@ -8,14 +8,20 @@ import AuthorLayout from '@/layouts/AuthorLayout';
 export const metadata = genPageMetadata({ title: 'About' });
 
 export default function Page() {
-  const author = allAuthors.find((p) => p.slug === 'default') as Authors;
-  const mainContent = coreContent(author);
+  const authors = allAuthors as Authors[]; // or filter if needed
+  //const mainContent = coreContent(author);
 
   return (
-    <>
-      <AuthorLayout content={mainContent}>
-        <MDXLayoutRenderer code={author.body.code} />
-      </AuthorLayout>
-    </>
+  <>
+    {authors.map((author) => {
+      const mainContent = coreContent(author);
+
+      return (
+        <AuthorLayout key={author.slug} content={mainContent}>
+          <MDXLayoutRenderer code={author.body.code} />
+        </AuthorLayout>
+      );
+    })}
+  </>
   );
 }

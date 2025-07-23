@@ -14,10 +14,9 @@ export default function Projects() {
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 pl-9">
             Below is a list of research about violence in Chicago. 
->>>>>>> Stashed changes
           </p>
         </div>
-        <div className="container py-12">
+        <div className="container py-12 pl-20">
           <div className="-m-4 flex flex-wrap">
             {projectsData.map((d) => (
               <Card
@@ -34,3 +33,5 @@ export default function Projects() {
     </>
   )
 }
+
+/* pictures should be 16X9 */

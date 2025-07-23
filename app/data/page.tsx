@@ -1,42 +1,37 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import Hero from '@/components/Hero'
-import Hero2 from '@/components/Hero2'
-//import Hero3 from '@/components/Hero3'
-import Hero3 from '@/components/Hero3'
-import Hero4 from '@/components/Hero4'
-import Hero5 from '@/components/Hero5'
-import DashboardList from '@/components/DashboardList'
-import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
-import CarouselSpacing from "@/components/Carosel"
-import Timeline from "@/components/Timeline"
-import Toolkit from "@/components/Toolkit"
-import Resources from '@/components/Resources'
-import LogoSection from '@/components/LogoSection'
-import Footer2 from '@/components/Footer2'
-import DataHeroPage from '@/components/DataHeroPage'
-import OverallArrestSection from "@/components/OverallArrestSection"
-import ChicagoArrestRate from "@/components/ChicagoArrestRate"
-import NeighborhoodStreetSegment from "@/components/NeighborhoodStreetSegment"
-import Map2 from '@/components/Map2'
-import Video from '@/components/Video'
+import dashboardsData from '@/data/dashboardsData'
+import Card from '@/components/Card'
+import { genPageMetadata } from 'app/seo'
 
-const MAX_DISPLAY = 5
+export const metadata = genPageMetadata({ title: 'Dashboards' })
 
-export default function Home() {
+export default function Dashboards() {
   return (
-    <> 
-    <DataHeroPage />
-    <ChicagoArrestRate />
-    <OverallArrestSection/>
-    <NeighborhoodStreetSegment />
-
-    
-    <Footer2 />
+    <>
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pl-9">
+            Data Sources and Dashboards
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400 pl-9">
+            Below is a list of data sources and dashboards about violence in Chicago. 
+          </p>
+        </div>
+        <div className="container py-12 pl-20">
+          <div className="-m-4 flex flex-wrap">
+            {dashboardsData.map((d) => (
+              <Card
+                key={d.title}
+                title={d.title}
+                description={d.description}
+                imgSrc={d.imgSrc}
+                href={d.href}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   )
 }
 
-
+/* pictures should be 16X9 */

@@ -17,6 +17,9 @@ export const metadata = genPageMetadata({ title: 'Researchers' });
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

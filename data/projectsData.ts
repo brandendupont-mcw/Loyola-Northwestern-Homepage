@@ -71,6 +71,12 @@ const projectsData: Project[] = [
     imgSrc: "/static/images/media_accountability_chart.png",
     href: "https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/66166c3b9118d507a806b952_Media%20Accountability%20Project%20-%20Research%20Brief%20-%209%20April%202024.pdf",
   },
+{
+    title: 'The Media Accountability Project: Race and Media Depictions of Gun Violence',
+    description: 'To better understand the way that media representations of shootings are influenced by race and place, Community Justice partnered with researchers at Northwestern University and the Center for Neighborhood Engaged Research and Science (CORNERS) to collect large portions of the U.S. media landscape on gun violence',
+    imgSrc: "/static/images/media_accountability_chart.png",
+    href: "https://cdn.prod.website-files.com/634dd45091db1de63b7112d9/66166c3b9118d507a806b952_Media%20Accountability%20Project%20-%20Research%20Brief%20-%209%20April%202024.pdf",
+  },
 ]
 
 export default projectsData

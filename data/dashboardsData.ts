@@ -37,6 +37,24 @@ const dashboardData: Dashboard[] = [
     href: "https://igchicago.org/information-portal/data-dashboards/socioeconomic-and-city-data-comparison-dashboard/",
   },
   {
+    title: 'Housing Market Indicators Data Portal',
+    description: 'On the IHS Housing Market Indicators Data Portal, users can search for, view, and download 13 indicators of housing market health in the Chicago region. The Housing Market Indicators Data Portal makes available data from five core data sets in the IHS Data Clearinghouse. Data available include indicators related to the composition of the housing stock (Cook County only), characteristics of property sales, mortgage lending activity, foreclosure filings, and completed foreclosure auction activity.',
+    imgSrc: "/static/images/depaul_housing_chart.png",
+    href: "https://www.housingstudies.org/data-portal/",
+  },
+  {
+    title: 'Police Accountability Dashboards',
+    description: 'The Use of Force Dashboard displays information related to CPD use of force incidents; and the Accountability Dashboard displays information related to complaints filed against CPD members. This information is made available to members of the public, the media, law enforcement partners and other stakeholders for informational purposes only. The information is reflective of the stored data at the time of posting, and is subject to change.',
+    imgSrc: "/static/images/police_accountability_dashboard.png",
+    href: "https://www.chicagopolice.org/statistics-data/data-dashboards/",
+  },
+  {
+    title: 'Chicago Violence Tracker',
+    description: 'Tracks the average number of victims over a 28-day period, providing insight into the current level of violence within the city. By comparing this data with historical records, the relative level of violence in the city can be assessed',
+    imgSrc: "/static/images/suntimes_violence_tracker.png",
+    href: "https://chicago.suntimes.com/graphics/crime/violence-tracker/",
+  },
+  {
     title: 'CPD Incident Data',
     description: "This dataset reflects reported incidents of crime (with the exception of murders where data exists for each victim) that occurred in the City of Chicago from 2001 to present, minus the most recent seven days. Data is extracted from the Chicago Police Department's CLEAR (Citizen Law Enforcement Analysis and Reporting) system.",
     imgSrc: "/static/images/download_icon.png",

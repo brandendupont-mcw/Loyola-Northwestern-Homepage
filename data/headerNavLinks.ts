@@ -3,7 +3,6 @@ const headerNavLinks = [
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
-  { href: '/blog', title: 'Blog' },
 =======
   { href: '/projects', title: 'Research' },
   { href: '/author', title: 'Researchers' },
@@ -16,6 +15,8 @@ const headerNavLinks = [
 >>>>>>> Stashed changes
 =======
   { href: '/projects', title: 'Research' },
+  { href: '/author', title: 'Researchers' },
+  { href: '/blog', title: 'Data Stories' },
   { href: '/author', title: 'Researchers' },
   { href: '/blog', title: 'Data Stories' },
 >>>>>>> Stashed changes

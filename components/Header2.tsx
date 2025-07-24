@@ -21,7 +21,7 @@ function Header2(){
              </div>
           </div>
           <div className="2xl:pl-32 lg:pl-10">
-          <div className="flex items-center space-x-4 leading-5 sm:space-x-8">
+          <div className="flex items-center space-x-4 leading-6 sm:space-x-8">
         {headerNavLinks
           .map((link) => (
             <Link
@@ -33,7 +33,7 @@ function Header2(){
               {link.title}
             </Link>
           ))}
-        <SearchButton />
+        
         <MobileNav />
       </div>
       </div>

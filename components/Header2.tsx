@@ -14,7 +14,7 @@ function Header2(){
         <header>
           <div className="mx-auto bg-primary-500  px-4 py-4 sm:px-6  lg:px-10">
               <div className="flex justify-between bg-primary-500">
-                 <a href="https://www.loyolaccj.org/" target="_blank" rel="noopener noreferrer">
+                 <a href="https://www.luc.edu/" target="_blank" rel="noopener noreferrer">
                  <LoyolaLogo className="w-[200px]" /></a>
                  <a href="https://www.cornersresearch.org/" target="_blank" rel="noopener noreferrer">
                  <NorthwesternLogo className="w-[350px]" /></a>

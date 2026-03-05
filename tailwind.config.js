@@ -45,6 +45,8 @@ module.exports = {
         lblue:"#00aeff",
         ywhite: "#fbfaf8",
         ywhite2: "#FFFBF1",
+        chicagored: "#e4002b",
+        chicagoblue: "#41B6E6",
         orange: {
           400:"#FF7C57",
           500:"#F0734C"
